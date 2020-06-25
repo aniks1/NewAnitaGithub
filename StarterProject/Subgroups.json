@@ -1,0 +1,4442 @@
+[
+	{
+		"subGroupId": 31,
+		"groupId": 20,
+		"levelId": 2,
+		"name": "1.4.2 Audio Control",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-dis-audio.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 251,
+						"severityLevel": 2,
+						"error_message": "Autoplay is used on media",
+						"repair_technique": "Provide options to pause/stop or control the volume of the media or ensure it does not last for more than 3 seconds"
+					},
+					{
+						"check_id": 266,
+						"severityLevel": 2,
+						"error_message": "Default controls used on media",
+						"repair_technique": "Default Controls provided by some browsers are not accessible. Provide custom controls that are accessible."
+					}
+				],
+				"id": 98,
+				"name": "audio|video",
+				"desc": "com.tcs.eaccess.checks.multimedia.AutoplayCheck",
+				"weightage": 0.0,
+				"applicable": true
+			}
+		]
+	},
+	{
+		"subGroupId": 32,
+		"groupId": 20,
+		"levelId": 3,
+		"name": "1.4.3 Contrast (Minimum)",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html",
+		"checkpoints": [
+			{
+				"checks": [
+				   {
+						"check_id": 103,
+						"severityLevel": 1,
+						"error_message": "Insufficient contrast between text foreground and background",
+						"repair_technique": "Minimum contrast ratio for small text should be 4.5:1 and 3:1 for large text"
+					},
+					{
+						"check_id": 104,
+						"severityLevel": 2,
+						"error_message": "Element background color not set when text color is specified",
+						"repair_technique": "Make sure that foreground color and background both are defined; or both are not defined (neither direct nor through ancestor)"
+					},
+					{
+						"check_id": 256,
+						"severityLevel": 2,
+						"error_message": "Element text color not set when background color is specified",
+						"repair_technique": "Make sure that foreground color and background both are defined; or both are not defined (neither direct nor through ancestor)"
+					},
+					{
+						"check_id": 278,
+						"severityLevel": 2,
+						"error_message": "Background image is used",
+						"repair_technique": "Make sure that foreground color and background image have sufficient color contrast"
+					}
+				],
+				"id": 21,
+				"name": "a|div|p|span|strong|em|q|cite|blockquote|li|dd|dt|td|th|h1|h2|h3|h4|h5|h6|label|acronym|abbr|code|pre|input|select|textarea",
+				"desc": "com.tcs.eaccess.checks.visual.ColorContrastCheckAA",
+				"weightage": 0.0,
+				"applicable": true
+			},
+			{
+				"checks": [
+					{
+						"check_id": 152,
+						"severityLevel": 0,
+						"error_message": "One or more components fail to satisfy the minimum color contrast",
+						"repair_technique": "Minimum contrast ratio for small text should be 4.5:1 and 3:1 for large text"
+					}
+				],
+				"id": 43,
+				"name": "div|span|a",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.SliderCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 161,
+						"severityLevel": 0,
+						"error_message": "One or more components fail to satisfy the minimum color contrast",
+						"repair_technique": "Minimum contrast ratio for small text should be 4.5:1 and 3:1 for large text"
+					}
+				],
+				"id": 50,
+				"name": "ul|ol",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.MenubarCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 174,
+						"severityLevel": 0,
+						"error_message": "One or more components fail to satisfy the minimum color contrast",
+						"repair_technique": "Minimum contrast ratio for small text should be 4.5:1 and 3:1 for large text"
+					}
+				],
+				"id": 59,
+				"name": "ul|ol",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.TreeviewCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 190,
+						"severityLevel": 0,
+						"error_message": "One or more components fail to satisfy the minimum color contrast in the datepicker",
+						"repair_technique": "Minimum contrast ratio for small text should be 4.5:1 and 3:1 for large text"
+					}
+				],
+				"id": 68,
+				"name": "input",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.DatepickerCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 203,
+						"severityLevel": 3,
+						"error_message": "One or more components fail to satisfy the minimum color contrast",
+						"repair_technique": "Minimum contrast ratio for small text should be 4.5:1 and 3:1 for large text"
+					}
+				],
+				"id": 77,
+				"name": "form",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.CaptchaCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 219,
+						"severityLevel": 3,
+						"error_message": "One or more components fail to satisfy the minimum color contrast",
+						"repair_technique": "Minimum contrast ratio for small text should be 4.5:1 and 3:1 for large text"
+					}
+				],
+				"id": 87,
+				"name": "div",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.CarouselCheck",
+				"weightage": 0.0,
+				"applicable": false
+			}
+		]
+	},
+	{
+		"subGroupId": 33,
+		"groupId": 20,
+		"levelId": 3,
+		"name": "1.4.4 Resize text",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 79,
+						"severityLevel": 2,
+						"error_message": "Scrolling is disabled",
+						"repair_technique": "Set \u003ccode\u003escrolling\u003c/code\u003e attribute to auto or remove the attribute"
+					}
+				],
+				"id": 103,
+				"name": "iframe",
+				"desc": "com.tcs.eaccess.checks.frames.FrameAccessibilityCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 337,
+						"severityLevel": 1,
+						"error_message": "Page does not allow resizing",
+						"repair_technique": "Make the following changes to allow proper resizing"
+					}
+				],
+				"id": 111,
+				"name": "head",
+				"desc": "com.tcs.eaccess.checks.pageinfo.ZoomCheck",
+				"weightage": 0.0,
+				"applicable": true
+			}
+		]
+	},
+	{
+		"subGroupId": 34,
+		"groupId": 20,
+		"levelId": 3,
+		"name": "1.4.5 Images of Text",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-presentation.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 164,
+						"severityLevel": 2,
+						"error_message": "One or more elements may have images in place of text",
+						"repair_technique": "Make sure that images of text have not been used; If used, replace all the images with equivalent text"
+					}
+				],
+				"id": 53,
+				"name": "ul|ol",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.MenubarCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 177,
+						"severityLevel": 2,
+						"error_message": "One or more elements may have images in place of text",
+						"repair_technique": "Make sure that images of text have not been used; If used, replace all the images with equivalent text"
+					}
+				],
+				"id": 62,
+				"name": "ul|ol",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.TreeviewCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 193,
+						"severityLevel": 2,
+						"error_message": "One or more elements may have images in place of text in the datepicker",
+						"repair_technique": "Make sure that images of text have not been used; If used, replace all the images with equivalent text"
+					}
+				],
+				"id": 71,
+				"name": "input",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.DatepickerCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 205,
+						"severityLevel": 3,
+						"error_message": "One or more elements may have images in place of text",
+						"repair_technique": "Make sure that images of text(except the CAPTCHA challenge) have not been used; If used, replace all the images with equivalent text"
+					}
+				],
+				"id": 79,
+				"name": "form",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.CaptchaCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 222,
+						"severityLevel": 3,
+						"error_message": "One or more elements may have images in place of text",
+						"repair_technique": "Make sure that images of text have not been used; If used, replace all the images with equivalent text"
+					}
+				],
+				"id": 90,
+				"name": "div",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.CarouselCheck",
+				"weightage": 0.0,
+				"applicable": false
+			}
+		]
+	},
+	{
+		"subGroupId": 35,
+		"groupId": 20,
+		"levelId": 4,
+		"name": "1.4.6 Contrast (Enhanced)",
+		 "url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast7.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 125,
+						"severityLevel": 0,
+						"error_message": "Insufficient contrast between text foreground and background",
+						"repair_technique": "Minimum contrast ratio for small text should be 7:1 and 4.5:1 for large text"
+					},
+					{
+						"check_id": 126,
+						"severityLevel": 2,
+						"error_message": "Transparent element background",
+						"repair_technique": "Make sure that foreground color and background both are defined; or both are not defined (neither direct nor through ancestor)"
+					}
+				],
+				"id": 28,
+				"name": "a|div|p|span|strong|em|q|cite|blockquote|li|dd|dt|td|th|h1|h2|h3|h4|h5|h6|label|acronym|abbr|code|pre|input|select|textarea",
+				"desc": "com.tcs.eaccess.checks.visual.ColorContrastCheckAAA",
+				"weightage": 0.0,
+				"applicable": true
+			}
+		]
+	},
+	{
+		"subGroupId": 36,
+		"groupId": 20,
+		"levelId": 4,
+		"name": "1.4.7 Low or No Background Audio",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-noaudio.html",
+		"checkpoints": []
+	},
+	{
+		"subGroupId": 37,
+		"groupId": 20,
+		"levelId": 4,
+		"name": "1.4.8 Visual Presentation",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-visual-presentation.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 253,
+						"severityLevel": 2,
+						"error_message": "Text alignment is justified",
+						"repair_technique": "Do not create text layout that is fully justified (aligned to both the left and the right margins)"
+					}
+				],
+				"id": 100,
+				"name": "p",
+				"desc": "com.tcs.eaccess.checks.paragraph.JustifyCheck",
+				"weightage": 0.0,
+				"applicable": true
+			}
+		]
+	},
+	{
+		"subGroupId": 38,
+		"groupId": 20,
+		"levelId": 4,
+		"name": "1.4.9 Images of Text (No Exception)",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-images.html",
+		"checkpoints": []
+	},
+	{
+		"subGroupId": 39,
+		"groupId": 21,
+		"levelId": 2,
+		"name": "2.1.1 Keyboard",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-keyboard-operable.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 129,
+						"severityLevel": 2,
+						"error_message": "Text alternative required for plug-in",
+						"repair_technique": "Provide a text alternative for the plug-in and make sure that it descibes the purpose of the content"
+					},
+					{
+						"check_id": 130,
+						"severityLevel": 2,
+						"error_message": "Element link may not be available through keyboard",
+						"repair_technique": "Make sure that the link to view the applet and to download the plug-in is available through keyboard"
+					},
+					{
+						"check_id": 131,
+						"severityLevel": 2,
+						"error_message": "Plug-in may not return focus to the parent window",
+						"repair_technique": "Make sure that the plug-in provides a mechanism to return focus to the parent window"
+					},
+					{
+						"check_id": 132,
+						"severityLevel": 2,
+						"error_message": "Start/Stop/Pause buttons should be operable through keyboard",
+						"repair_technique": "Make sure that these button receive keyboard focus and can be operated using keyboard only"
+					},
+					{
+						"check_id": 133,
+						"severityLevel": 2,
+						"error_message": "Allow plug-in to be downloaded through keyboard",
+						"repair_technique": "Make sure that the mechanism to download the plug-in is operable through keyboard"
+					},
+					{
+						"check_id": 134,
+						"severityLevel": 2,
+						"error_message": "Plug-in may be inaccessible",
+						"repair_technique": "Make the plug-in accessible. If it cannot be made accessible, make sure that alternate accessible content is provided."
+					}
+				],
+				"id": 38,
+				"name": "applet|embed|object",
+				"desc": "com.tcs.eaccess.checks.keyboard.PluginCheck",
+				"weightage": 0.0,
+				"applicable": true
+			},
+			{
+				"checks": [
+					{
+						"check_id": 34,
+						"severityLevel": 1,
+						"error_message": "Missing Keyboard event handler",
+						"repair_technique": "For \u003ccode\u003eonclick\u003c/code\u003e event handlers add an associated \u003ccode\u003eonkeypress\u003c/code\u003e event handler or its equivalent"
+					},
+					{
+						"check_id": 35,
+						"severityLevel": 1,
+						"error_message": "Missing Keyboard event handler",
+						"repair_technique": "For \u003ccode\u003eonmousedown\u003c/code\u003e event handlers add an associated \u003ccode\u003eonkeydown\u003c/code\u003e event handler or its equivalent"
+					},
+					{
+						"check_id": 36,
+						"severityLevel": 1,
+						"error_message": "Missing Keyboard event handler",
+						"repair_technique": "For \u003ccode\u003eonmouseout\u003c/code\u003e event handlers add an associated \u003ccode\u003eonblur\u003c/code\u003e event handler or its equivalent"
+					},
+					{
+						"check_id": 37,
+						"severityLevel": 1,
+						"error_message": "Missing Keyboard event handler",
+						"repair_technique": "For \u003ccode\u003eonmouseover\u003c/code\u003e event handlers add an associated \u003ccode\u003eonfocus\u003c/code\u003e event handler or its equivalent"
+					},
+					{
+						"check_id": 38,
+						"severityLevel": 1,
+						"error_message": "Missing Keyboard event handler",
+						"repair_technique": "For \u003ccode\u003eonmouseup\u003c/code\u003e event handlers add an associated \u003ccode\u003eonkeyup\u003c/code\u003e event handler or its equivalent"
+					},
+					{
+						"check_id": 40,
+						"severityLevel": 2,
+						"error_message": "Missing Keyboard event handler",
+						"repair_technique": "For \u003ccode\u003eonmousemove\u003c/code\u003e event handlers add an equivalent keyboard specific event handler"
+					},
+					{
+						"check_id": 39,
+						"severityLevel": 1,
+						"error_message": "Missing Keyboard event handler",
+						"repair_technique": "Use \u003ccode\u003eonclick\u003c/code\u003e instead of \u003ccode\u003eondblclick\u003c/code\u003e or add an equivalent keyboard specific event handler"
+					}
+				],
+				"id": 5,
+				"name": "a|input|textarea|select|div|span|p|li|dd|dt|td|th|button|img",
+				"desc": "com.tcs.eaccess.checks.keyboard.EventHandlerCheck",
+				"weightage": 0.0,
+				"applicable": true
+			},
+			{
+				"checks": [
+					{
+						"check_id": 144,
+						"severityLevel": 1,
+						"error_message": "Slider does not receive keyboard focus",
+						"repair_technique": "Provide a valid \u003ccode\u003etabindex\u003c/code\u003e to the slider"
+					},
+					{
+						"check_id": 145,
+						"severityLevel": 2,
+						"error_message": "All functionality of slider cannot be completed using keyboard",
+						"repair_technique": "Make sure that the slider can be fully operated using keyboard"
+					},
+					{
+						"check_id": 146,
+						"severityLevel": 1,
+						"error_message": "Appropriate keyboard interaction not provided for slider",
+						"repair_technique": "Provide missing keyboard interactions for the slider"
+					}
+				],
+				"id": 40,
+				"name": "div|span|a",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.SliderCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 154,
+						"severityLevel": 1,
+						"error_message": "Appropriate keyboard interaction not provided for menubar",
+						"repair_technique": "Provide missing keyboard interactions for the menubar"
+					}
+				],
+				"id": 45,
+				"name": "ul|ol",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.MenubarCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 165,
+						"severityLevel": 1,
+						"error_message": "Appropriate keyboard interaction not provided for tree",
+						"repair_technique": "Provide missing keyboard interactions for the tree"
+					}
+				],
+				"id": 54,
+				"name": "ul|ol",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.TreeviewCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 178,
+						"severityLevel": 1,
+						"error_message": "Datepicker does not receive keyboard focus",
+						"repair_technique": "Provide a valid \u003ccode\u003etabindex\u003c/code\u003e to the datepicker"
+					},
+					{
+						"check_id": 179,
+						"severityLevel": 2,
+						"error_message": "All functionality of datepicker cannot be completed using keyboard",
+						"repair_technique": "Make sure that the datepicker can be fully operated using keyboard"
+					},
+					{
+						"check_id": 180,
+						"severityLevel": 1,
+						"error_message": "Appropriate keyboard interaction not provided for datepicker",
+						"repair_technique": "Provide missing keyboard interactions for the datepicker"
+					},
+					{
+						"check_id": 225,
+						"severityLevel": 2,
+						"error_message": "Datepicker field used",
+						"repair_technique": "Provide textual information about the date format to be entered"
+					}
+				],
+				"id": 63,
+				"name": "input",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.DatepickerCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 195,
+						"severityLevel": 3,
+						"error_message": "All functionality of CAPTCHA cannot be completed using keyboard",
+						"repair_technique": "Provide keyboard mechanism to TAB out of the CAPTCHA"
+					},
+					{
+						"check_id": 194,
+						"severityLevel": 2,
+						"error_message": "One or more elements of CAPTCHA do not receive keyboard focus",
+						"repair_technique": "Provide a valid \u003ccode\u003etabindex\u003c/code\u003e to the elements of the CAPTCHA"
+					}
+				],
+				"id": 72,
+				"name": "form",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.CaptchaCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 209,
+						"severityLevel": 3,
+						"error_message": "Pause/stop/hide control does not receive keyboard focus",
+						"repair_technique": "Provide a valid \u003ccode\u003etabindex\u003c/code\u003e to the control"
+					},
+					{
+						"check_id": 210,
+						"severityLevel": 3,
+						"error_message": "Pause/stop/hide control cannot be activated using keyboard",
+						"repair_technique": "Make sure that the controls can be activated using keyboard"
+					},
+					{
+						"check_id": 211,
+						"severityLevel": 3,
+						"error_message": "One or more elements do not receive keyboard focus",
+						"repair_technique": "Provide a valid \u003ccode\u003etabindex\u003c/code\u003e to the carousel elements"
+					}
+				],
+				"id": 81,
+				"name": "div",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.CarouselCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 229,
+						"severityLevel": 1,
+						"error_message": "Element does not recieve keyboard focus",
+						"repair_technique": "Provide a valid \u003ccode\u003etabindex\u003c/code\u003e to the element and make sure that the focus does not get trapped anywhere in the page"
+					},
+					{
+						"check_id": 285,
+						"severityLevel": 1,
+						"error_message": "Keyboard focus repeats on page",
+						"repair_technique": "Make sure that the keyboard focus is not trapped on the mentioned element"
+					},
+					{
+						"check_id": 238,
+						"severityLevel": 1,
+						"error_message": "Element does not recieve keyboard focus",
+						"repair_technique": "Do not use \u003ccode\u003ethis.blur()\u003c/code\u003e in \u003ccode\u003eonfocus\u003c/code\u003e event"
+					},
+					{
+						"check_id": 277,
+						"severityLevel": 1,
+						"error_message": "Element does not recieve keyboard focus",
+						"repair_technique": "Provide a valid \u003ccode\u003etabindex\u003c/code\u003e to the clickable element"
+					}
+				],
+				"id": 92,
+				"name": "body|input|textarea|select|button|a|area",
+				"desc": "com.tcs.eaccess.checks.keyboard.FocusRecieveCheck",
+				"weightage": 0.0,
+				"applicable": true
+			},
+			{
+				"checks": [
+					{
+						"check_id": 294,
+						"severityLevel": 1,
+						"error_message": "Dialog is missing focusable element",
+						"repair_technique": "Ensure that all dialogs (both modal and non-modal) have at least one focusable descendant element."
+					},
+					{
+						"check_id": 295,
+						"severityLevel": 1,
+						"error_message": "Articles in feed are not focusable",
+						"repair_technique": "Make each article in feed focusable "
+					},
+					{
+						"check_id": 302,
+						"severityLevel": 1,
+						"error_message": "Presentation role used on interactive element or hidden from aria",
+						"repair_technique": "Do not use \u003ccode\u003erole\u003d\u0026quot;presentation\u0026quot;\u003c/code\u003e or \u003ccode\u003earia-hidden\u003d\u0026quot;true\u0026quot;\u003c/code\u003eon visible focusable elements"
+					},
+					{
+						"check_id": 310,
+						"severityLevel": 1,
+						"error_message": "Term is used on interactive element",
+						"repair_technique": "Do not use the term role on interactive elements such as links/inputs/buttons. Doing so could prevent users of assistive technologies from interacting with those elements. "
+					},
+					{
+						"check_id": 311,
+						"severityLevel": 1,
+						"error_message": "Text is used on interactive element",
+						"repair_technique": "Do not use the text role on interactive elements such as links/inputs/buttons. Doing so could prevent users of assistive technologies from interacting with those elements. "
+					},
+					{
+						"check_id": 312,
+						"severityLevel": 1,
+						"error_message": "Text contains interactive elements",
+						"repair_technique": "Do not use the text role on ancestor of interactive elements such as links/inputs/buttons. Doing so could prevent users of assistive technologies from interacting with those elements. "
+					}
+				],
+				"id": 107,
+				"name": "all",
+				"desc": "com.tcs.eaccess.checks.markup.AriaCheck",
+				"weightage": 0.0,
+				"applicable": false
+			}
+		]
+	},
+	{
+		"subGroupId": 40,
+		"groupId": 21,
+		"levelId": 2,
+		"name": "2.1.2 No Keyboard Trap",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-trapping.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 147,
+						"severityLevel": 1,
+						"error_message": "Keyboard focus gets trapped in the slider",
+						"repair_technique": "Provide keyboard mechanism to TAB out of the slider"
+					}
+				],
+				"id": 41,
+				"name": "div|span|a",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.SliderCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 155,
+						"severityLevel": 1,
+						"error_message": "Keyboard focus gets trapped in the menubar",
+						"repair_technique": "Provide keyboard mechanism to TAB out of the menubar"
+					}
+				],
+				"id": 46,
+				"name": "ul|ol",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.MenubarCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 166,
+						"severityLevel": 1,
+						"error_message": "Keyboard focus gets trapped in the tree",
+						"repair_technique": "Provide keyboard mechanism to TAB out of the menubar"
+					}
+				],
+				"id": 55,
+				"name": "ul|ol",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.TreeviewCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 181,
+						"severityLevel": 1,
+						"error_message": "Keyboard focus gets trapped in the datepicker",
+						"repair_technique": "Provide keyboard mechanism to TAB out of the datepicker"
+					}
+				],
+				"id": 64,
+				"name": "input",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.DatepickerCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 196,
+						"severityLevel": 2,
+						"error_message": "Keyboard focus gets trapped in the CAPTCHA",
+						"repair_technique": "Provide keyboard mechanism to TAB out of the CAPTCHA"
+					}
+				],
+				"id": 73,
+				"name": "form",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.CaptchaCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 212,
+						"severityLevel": 2,
+						"error_message": "Keyboard focus gets trapped in the carousel",
+						"repair_technique": "Provide keyboard mechanism to TAB out of the carousel"
+					}
+				],
+				"id": 82,
+				"name": "div",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.CarouselCheck",
+				"weightage": 0.0,
+				"applicable": false
+			}
+		]
+	},
+	{
+		"subGroupId": 41,
+		"groupId": 21,
+		"levelId": 4,
+		"name": "2.1.3 Keyboard (No Exception)",
+		 "url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-all-funcs.html",
+		"checkpoints": []
+	},
+	{
+		"subGroupId": 79,
+		"groupId": 30,
+		"levelId": 2,
+		"name": "2.1.4 Character Key Shortcuts",
+		"url": "https://www.w3.org/WAI/WCAG21/Understanding/character-key-shortcuts.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 348,
+						"severityLevel": 1,
+						"error_message": "Accesskey attribute contains single character value",
+						"repair_technique": "Modify the keyboard shortcut to include one or more non-printable keyboard keys (e.g. Ctrl, Alt,Shift)"
+					}
+				],
+				"id": 121,
+				"name": "a|input|textarea|select|div|span|p|li|dd|dt|td|th|button|img",
+				"desc": "com.tcs.eaccess.checks.key.KeyShortcuts",
+				"weightage": 0.0,
+				"applicable": true
+			}
+	]
+	},
+	{
+		"subGroupId": 42,
+		"groupId": 22,
+		"levelId": 2,
+		"name": "2.2.1 Timing Adjustable",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-required-behaviors.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 140,
+						"severityLevel": 0,
+						"error_message": "Page refresh is used with a timeout",
+						"repair_technique": "Set the redirection timeout to 0 or use a server side redirect"
+					}
+				],
+				"id": 19,
+				"name": "head",
+				"desc": "com.tcs.eaccess.checks.pageinfo.RefreshCheck",
+				"weightage": 0.0,
+				"applicable": true
+			}
+		]
+	},
+	{
+		"subGroupId": 43,
+		"groupId": 22,
+		"levelId": 2,
+		"name": "2.2.2 Pause, Stop, Hide",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-pause.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 102,
+						"severityLevel": 2,
+						"error_message": "marquee element used",
+						"repair_technique": "Provide option to control the scrolling or do not use the \u003ccode\u003emarquee\u003c/code\u003e tag"
+					},
+					{
+						"check_id": 101,
+						"severityLevel": 2,
+						"error_message": "blink element used",
+						"repair_technique": "Provide option to control the blinking or do not use the \u003ccode\u003eblink\u003c/code\u003e tag"
+					}
+				],
+				"id": 20,
+				"name": "blink|marquee",
+				"desc": "com.tcs.eaccess.checks.visual.UpdatingContentCheck",
+				"weightage": 0.0,
+				"applicable": true
+			},
+			{
+				"checks": [
+					{
+						"check_id": 207,
+						"severityLevel": 3,
+						"error_message": "Movement of carousel restarting on its own",
+						"repair_technique": "Carousel movement should not start automatically after pausing, stopping or hiding"
+					},
+					{
+						"check_id": 208,
+						"severityLevel": 3,
+						"error_message": "Pause/stop/hide control ties up the user focus",
+						"repair_technique": "Provide keyboard mechanism to TAB out of the control"
+					},
+					{
+						"check_id": 206,
+						"severityLevel": 2,
+						"error_message": "Option to pause/stop/hide carousel not provided",
+						"repair_technique": "Provide mechanism to pause/stop/hide the carousel"
+					}
+				],
+				"id": 80,
+				"name": "div",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.CarouselCheck",
+				"weightage": 0.0,
+				"applicable": false
+			}
+		]
+	},
+	{
+		"subGroupId": 44,
+		"groupId": 22,
+		"levelId": 4,
+		"name": "2.2.3 No Timing",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-no-exceptions.html",
+		"checkpoints": []
+	},
+	{
+		"subGroupId": 45,
+		"groupId": 22,
+		"levelId": 4,
+		"name": "2.2.4 Interruptions",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-postponed.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 140,
+						"severityLevel": 0,
+						"error_message": "Page refresh is used with a timeout",
+						"repair_technique": "Set the redirection timeout to 0 or use a server side redirect"
+					}
+				],
+				"id": 19,
+				"name": "head",
+				"desc": "com.tcs.eaccess.checks.pageinfo.RefreshCheck",
+				"weightage": 0.0,
+				"applicable": true
+			}
+		]
+	},
+	{
+		"subGroupId": 46,
+		"groupId": 22,
+		"levelId": 4,
+		"name": "2.2.5 Re-authenticating",
+		 "url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-server-timeout.html",
+		"checkpoints": []
+	},
+	{
+		"subGroupId": 47,
+		"groupId": 23,
+		"levelId": 2,
+		"name": "2.3.1 Three Flashes or Below Threshold",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html",
+		"checkpoints": []
+	},
+	{
+		"subGroupId": 17,
+		"groupId": 17,
+		"levelId": 2,
+		"name": "1.1.1 Non-text Content",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 17,
+						"severityLevel": 0,
+						"error_message": "Missing alt attribute",
+						"repair_technique": "Add an \u003ccode\u003ealt\u003c/code\u003e attribute to the image"
+					},
+					{
+						"check_id": 18,
+						"severityLevel": 0,
+						"error_message": "Alt attribute cannot be same as file name",
+						"repair_technique": "Provide a valid text to the \u003ccode\u003ealt\u003c/code\u003e attribute that describes the image"
+					},
+					{
+						"check_id": 19,
+						"severityLevel": 0,
+						"error_message": "Alt attribute is placeholder text",
+						"repair_technique": "Provide a valid text to the \u003ccode\u003ealt\u003c/code\u003e attribute that describes the image"
+					},
+					{
+						"check_id": 20,
+						"severityLevel": 2,
+						"error_message": "Image has short alt attribute",
+						"repair_technique": "Check that the alt attribute conveys the meaning/purpose of the image"
+					},
+					{
+						"check_id": 21,
+						"severityLevel": 2,
+						"error_message": "Alt attribute of image is verbose",
+						"repair_technique": "Check that a long value of alt attribute is required to convey the information in the image"
+					},
+					{
+						"check_id": 24,
+						"severityLevel": 3,
+						"error_message": "Alt attribute text may not describe the functional purpose of the image",
+						"repair_technique": "Make sure that the \u003ccode\u003ealt\u003c/code\u003e attribute describes the purpose of its parent \u003ccode\u003ea\u003c/code\u003e or \u003ccode\u003ebutton\u003c/code\u003e element"
+					},
+					{
+						"check_id": 25,
+						"severityLevel": 0,
+						"error_message": "Images without an alt attribute cannot have an empty longdesc attribute",
+						"repair_technique": "Provide meaningful text to the \u003ccode\u003elongdesc\u003c/code\u003e attribute that describes the image"
+					},
+					{
+						"check_id": 26,
+						"severityLevel": 3,
+						"error_message": "Longdesc attribute may not be meaningful",
+						"repair_technique": "Make sure the \u003ccode\u003elongdesc\u003c/code\u003e attribute describes the image"
+					},
+					{
+						"check_id": 27,
+						"severityLevel": 3,
+						"error_message": "Alt attribute of image may not be meaningful",
+						"repair_technique": "Make sure the \u003ccode\u003ealt\u003c/code\u003e attribute conveys the information present in the image"
+					},
+					{
+						"check_id": 28,
+						"severityLevel": 0,
+						"error_message": "Alt text of image used as link cannot be empty when there is no text in the anchor",
+						"repair_technique": "Provide a valid text to the \u003ccode\u003ealt\u003c/code\u003e attribute of the image or provide text inside the parent \u003ccode\u003ea\u003c/code\u003e that describes the image or purpose of the anchor"
+					},
+					{
+						"check_id": 30,
+						"severityLevel": 3,
+						"error_message": "Anchor text may not be meaningful",
+						"repair_technique": "Make sure that the text in the parent \u003ccode\u003ea\u003c/code\u003e of the image describes the purpose of the anchor"
+					},
+					{
+						"check_id": 22,
+						"severityLevel": 2,
+						"error_message": "Blank alt attribute",
+						"repair_technique": "Add a valid text to the \u003ccode\u003ealt\u003c/code\u003e attribute of the image unless the image is for decorative purpose only"
+					},
+					{
+						"check_id": 240,
+						"severityLevel": 0,
+						"error_message": "Alt text of image used as link cannot be same as the text in the adjacent anchor",
+						"repair_technique": "Merge the adjacent anchors"
+					},
+					{
+						"check_id": 232,
+						"severityLevel": 0,
+						"error_message": "Image has both alt \u0026amp; title attribute",
+						"repair_technique": "Remove the \u003ccode\u003etitle\u003c/code\u003e attribute of the image"
+					},
+					{
+						"check_id": 239,
+						"severityLevel": 0,
+						"error_message": "Alt text of image used as link cannot be same as the text in anchor",
+						"repair_technique": "Provide a valid text to the \u003ccode\u003ealt\u003c/code\u003e attribute of the image that is different than the anchor text"
+					},
+					{
+						"check_id": 23,
+						"severityLevel": 1,
+						"error_message": "Blank alt attribute",
+						"repair_technique": "If the image is not being used for decorative purpose, use the \u003ccode\u003ealt\u003c/code\u003e attribute in place of \u003ccode\u003etitle\u003c/code\u003e attribute"
+					},
+					{
+						"check_id": 255,
+						"severityLevel": 0,
+						"error_message": "Image has both alt \u0026amp; title attribute",
+						"repair_technique": "Add any extra information in \u003ccode\u003etitle\u003c/code\u003e to the \u003ccode\u003ealt\u003c/code\u003e attribute and remove the \u003ccode\u003etitle\u003c/code\u003e attribute of the image"
+					},
+					{
+						"check_id": 267,
+						"severityLevel": 0,
+						"error_message": "Title used in place of alt",
+						"repair_technique": "Use \u003ccode\u003ealt\u003c/code\u003e attribute instead of \u003ccode\u003etitle\u003c/code\u003e attribute"
+					},
+					{
+						"check_id": 268,
+						"severityLevel": 0,
+						"error_message": "Blank alt attribute",
+						"repair_technique": "Provide meaningful text to the \u003ccode\u003ealt\u003c/code\u003e attribute of the image"
+					},
+					{
+						"check_id": 283,
+						"severityLevel": 1,
+						"error_message": "Image having longdesc has blank or missing alt attribute",
+						"repair_technique": "Provide a meaningful \u003ccode\u003ealt\u003c/code\u003e attribute to the image"
+					},
+					{
+						"check_id": 29,
+						"severityLevel": 0,
+						"error_message": "Server side image map used",
+						"repair_technique": "Replace it with an equivalent client side image map or provide alternative text based anchors that carry out the same task as image map"
+					}
+				],
+				"id": 2,
+				"name": "img",
+				"desc": "com.tcs.eaccess.checks.images.AlternateTextCheck",
+				"weightage": 0.0,
+				"applicable": true
+			},
+			{
+				"checks": [
+					{
+						"check_id": 31,
+						"severityLevel": 0,
+						"error_message": "Image map hotspot missing alt attribute",
+						"repair_technique": "Add an \u003ccode\u003ealt\u003c/code\u003e attribute to the image map hotspot"
+					},
+					{
+						"check_id": 32,
+						"severityLevel": 0,
+						"error_message": "Image map hotspot having blank alt attribute",
+						"repair_technique": "Add a valid text to the \u003ccode\u003ealt\u003c/code\u003e attribute of the image map hotspot"
+					},
+					{
+						"check_id": 33,
+						"severityLevel": 3,
+						"error_message": "Alt attribute of image map hotspot may not be meaningful",
+						"repair_technique": "Make sure the \u003ccode\u003ealt\u003c/code\u003e attribute describes the portion of the image map referenced by the hotspot"
+					},
+					{
+						"check_id": 123,
+						"severityLevel": 2,
+						"error_message": "Image map hotspot to a sound file must have a text transcript",
+						"repair_technique": "Make sure that an equivalent link to a text transcript of the sound file exists in the document"
+					},
+					{
+						"check_id": 226,
+						"severityLevel": 2,
+						"error_message": "Image map hotspot missing title",
+						"repair_technique": "Add a meaningful \u003ccode\u003etitle\u003c/code\u003e to the image map hotspot"
+					},
+					{
+						"check_id": 273,
+						"severityLevel": 0,
+						"error_message": "Image map hotspot has duplicate alt attribute",
+						"repair_technique": "Add a unique text to the \u003ccode\u003ealt\u003c/code\u003e attribute of the image map hotspot"
+					}
+				],
+				"id": 4,
+				"name": "area",
+				"desc": "com.tcs.eaccess.checks.images.AreaAlternateTextCheck",
+				"weightage": 0.0,
+				"applicable": true
+			},
+			{
+				"checks": [
+					{
+						"check_id": 110,
+						"severityLevel": 3,
+						"error_message": "Applet may not have a text equivalent",
+						"repair_technique": "Make sure that \u003ccode\u003eapplet\u003c/code\u003e has a text equivalent in its \u003ccode\u003ealt\u003c/code\u003e attribute"
+					},
+					{
+						"check_id": 111,
+						"severityLevel": 3,
+						"error_message": "Text equivalent for applet may not update when applet updates",
+						"repair_technique": "Make sure that the text equivalent for \u003ccode\u003eapplet\u003c/code\u003e updates when applet updates"
+					},
+					{
+						"check_id": 112,
+						"severityLevel": 3,
+						"error_message": "Applet user interface may not be accessible",
+						"repair_technique": "Make sure that \u003ccode\u003eapplet\u003c/code\u003e user interface is accessible"
+					}
+				],
+				"id": 25,
+				"name": "applet",
+				"desc": "com.tcs.eaccess.checks.external.AppletCheck",
+				"weightage": 0.0,
+				"applicable": true
+			},
+			{
+				"checks": [
+					{
+						"check_id": 114,
+						"severityLevel": 3,
+						"error_message": "Text equivalent for object may not update when object updates",
+						"repair_technique": "Make sure that the text equivalent for \u003ccode\u003eobject\u003c/code\u003e updates when applet updates"
+					},
+					{
+						"check_id": 115,
+						"severityLevel": 3,
+						"error_message": "Object user interface may not be accessible",
+						"repair_technique": "Make sure that \u003ccode\u003eobject\u003c/code\u003e user interface is accessible"
+					},
+					{
+						"check_id": 116,
+						"severityLevel": 0,
+						"error_message": "Missing object title",
+						"repair_technique": "Add a \u003ccode\u003etitle\u003c/code\u003e attribute to the object"
+					},
+					{
+						"check_id": 117,
+						"severityLevel": 0,
+						"error_message": "Blank object title",
+						"repair_technique": "Add text to the \u003ccode\u003etitle\u003c/code\u003e attribute of the object"
+					},
+					{
+						"check_id": 113,
+						"severityLevel": 1,
+						"error_message": "Object does not have a text alternative",
+						"repair_technique": "Provide a text alternative in the content of the \u003ccode\u003eobject\u003c/code\u003e"
+					}
+				],
+				"id": 26,
+				"name": "object",
+				"desc": "com.tcs.eaccess.checks.external.ObjectCheck",
+				"weightage": 0.0,
+				"applicable": true
+			},
+			{
+				"checks": [
+					{
+						"check_id": 118,
+						"severityLevel": 0,
+						"error_message": "Missing noembed element",
+						"repair_technique": "Add a \u003ccode\u003enoembed\u003c/code\u003e element for the \u003ccode\u003eembed\u003c/code\u003e element containing equivalent text"
+					},
+					{
+						"check_id": 119,
+						"severityLevel": 0,
+						"error_message": "Blank noembed element",
+						"repair_technique": "Add a text equivalent of the \u003ccode\u003eembed\u003c/code\u003e element inside the \u003ccode\u003enoembed\u003c/code\u003e"
+					},
+					{
+						"check_id": 120,
+						"severityLevel": 3,
+						"error_message": "noembed may not be meaningful",
+						"repair_technique": "Make sure that the \u003ccode\u003enoembed\u003c/code\u003e element describes the \u003ccode\u003eembed\u003c/code\u003e element"
+					},
+					{
+						"check_id": 121,
+						"severityLevel": 0,
+						"error_message": "embed must have alt attribute.",
+						"repair_technique": "Add an \u003ccode\u003ealt\u003c/code\u003e attribute to the element"
+					},
+					{
+						"check_id": 122,
+						"severityLevel": 0,
+						"error_message": "embed must not have empty Alt text.",
+						"repair_technique": "Add text to the \u003ccode\u003ealt\u003c/code\u003e attribute of the element"
+					}
+				],
+				"id": 27,
+				"name": "embed",
+				"desc": "com.tcs.eaccess.checks.external.EmbedCheck",
+				"weightage": 0.0,
+				"applicable": true
+			},
+			{
+				"checks": [
+					{
+						"check_id": 137,
+						"severityLevel": 2,
+						"error_message": "Image has been added using CSS",
+						"repair_technique": "Make sure that the image is for decorative purpose only. If the image contains information, use \u003ccode\u003eimg\u003c/code\u003e tag instead."
+					}
+				],
+				"id": 3,
+				"name": "a|div|p|span|li|dd|dt|td|th|h1|h2|h3|h4|h5|h6|label|button",
+				"desc": "com.tcs.eaccess.checks.images.CSSImageCheck",
+				"weightage": 0.0,
+				"applicable": true
+			},
+			{
+				"checks": [
+					{
+						"check_id": 1,
+						"severityLevel": 0,
+						"error_message": "Form control has no associated label or title",
+						"repair_technique": "Add a unique \u003ccode\u003elabel\u003c/code\u003e for the form control or specify the \u003ccode\u003etitle\u003c/code\u003e attribute"
+					},
+					{
+						"check_id": 2,
+						"severityLevel": 0,
+						"error_message": "Form control has more than one labels associated",
+						"repair_technique": "Remove all associated \u003ccode\u003elabel\u003c/code\u003e elements except one"
+					},
+					{
+						"check_id": 3,
+						"severityLevel": 0,
+						"error_message": "Empty or missing label text",
+						"repair_technique": "Add some valid, meaningful text to the \u003ccode\u003elabel\u003c/code\u003e element that describes the form control"
+					},
+					{
+						"check_id": 4,
+						"severityLevel": 0,
+						"error_message": "Empty or missing title text",
+						"repair_technique": "Add some valid, meaningful text to the \u003ccode\u003etitle\u003c/code\u003e attribute that describes the form control"
+					},
+					{
+						"check_id": 5,
+						"severityLevel": 0,
+						"error_message": "Incorrect label position",
+						"repair_technique": "Make sure the associated \u003ccode\u003elabel\u003c/code\u003e is positioned after the form control"
+					},
+					{
+						"check_id": 6,
+						"severityLevel": 0,
+						"error_message": "Incorrect label position",
+						"repair_technique": "Make sure the associated \u003ccode\u003elabel\u003c/code\u003e is positioned before the form control"
+					},
+					{
+						"check_id": 7,
+						"severityLevel": 0,
+						"error_message": "Missing value attribute",
+						"repair_technique": "Add a \u003ccode\u003evalue\u003c/code\u003e attribute to the form control"
+					},
+					{
+						"check_id": 8,
+						"severityLevel": 0,
+						"error_message": "Blank value attribute",
+						"repair_technique": "Add a valid text to the \u003ccode\u003evalue\u003c/code\u003e attribute of the form control"
+					},
+					{
+						"check_id": 9,
+						"severityLevel": 0,
+						"error_message": "Missing alt attribute",
+						"repair_technique": "Add an \u003ccode\u003ealt\u003c/code\u003e attribute to the form control"
+					},
+					{
+						"check_id": 10,
+						"severityLevel": 0,
+						"error_message": "Blank alt attribute",
+						"repair_technique": "Add a valid text to the \u003ccode\u003ealt\u003c/code\u003e attribute of the form control"
+					},
+					{
+						"check_id": 12,
+						"severityLevel": 0,
+						"error_message": "Alt attribute is placeholder text",
+						"repair_technique": "Provide a valid text to the \u003ccode\u003ealt\u003c/code\u003e attribute that describes the form control image"
+					},
+					{
+						"check_id": 13,
+						"severityLevel": 3,
+						"error_message": "Label text may not be meaningful",
+						"repair_technique": "Make sure the associated \u003ccode\u003elabel\u003c/code\u003e text describes the form control or its purpose"
+					},
+					{
+						"check_id": 14,
+						"severityLevel": 3,
+						"error_message": "Title attribute text may not be meaningful",
+						"repair_technique": "Make sure the \u003ccode\u003etitle\u003c/code\u003e attribute text describes the form control or its purpose"
+					},
+					{
+						"check_id": 15,
+						"severityLevel": 3,
+						"error_message": "Value attribute text may not be meaningful",
+						"repair_technique": "Make sure the \u003ccode\u003evalue\u003c/code\u003e attribute text describes the form control or its purpose"
+					},
+					{
+						"check_id": 16,
+						"severityLevel": 3,
+						"error_message": "Alt attribute text may not be meaningful",
+						"repair_technique": "Make sure the \u003ccode\u003ealt\u003c/code\u003e attribute text describes the form control image or its purpose"
+					},
+					{
+						"check_id": 11,
+						"severityLevel": 2,
+						"error_message": "Alt attribute cannot be same as file name",
+						"repair_technique": "Provide a valid text to the \u003ccode\u003ealt\u003c/code\u003e attribute that describes the form control image"
+					},
+					{
+						"check_id": 230,
+						"severityLevel": 2,
+						"error_message": "Incorrect label position",
+						"repair_technique": "Make sure the associated \u003ccode\u003elabel\u003c/code\u003e is positioned after the form control"
+					},
+					{
+						"check_id": 231,
+						"severityLevel": 2,
+						"error_message": "Incorrect label position",
+						"repair_technique": "Make sure the associated \u003ccode\u003elabel\u003c/code\u003e is positioned before the form control"
+					},
+					{
+						"check_id": 258,
+						"severityLevel": 2,
+						"error_message": "Form control has both label and title associated with it",
+						"repair_technique": "Add any extra information in \u003ccode\u003etitle\u003c/code\u003e to the \u003ccode\u003elabel\u003c/code\u003e and remove the \u003ccode\u003etitle\u003c/code\u003e attribute"
+					},
+					{
+						"check_id": 237,
+						"severityLevel": 0,
+						"error_message": "Label is implicitly associated to the input field",
+						"repair_technique": "Make sure the \u003ccode\u003elabel\u003c/code\u003e is explicitly associated to the form control"
+					},
+					{
+						"check_id": 233,
+						"severityLevel": 2,
+						"error_message": "Label is implicitly associated to the input field",
+						"repair_technique": "Make sure the \u003ccode\u003elabel\u003c/code\u003e is explicitly associated to the form control"
+					},
+					{
+						"check_id": 254,
+						"severityLevel": 0,
+						"error_message": "Button has no text or title",
+						"repair_technique": "Add a unique text to the \u003ccode\u003ebutton\u003c/code\u003e or specify the \u003ccode\u003etitle\u003c/code\u003e attribute"
+					},
+					{
+						"check_id": 261,
+						"severityLevel": 0,
+						"error_message": "Button has placeholder title",
+						"repair_technique": "Provide a valid text to the \u003ccode\u003etitle\u003c/code\u003e attribute"
+					},
+					{
+						"check_id": 260,
+						"severityLevel": 0,
+						"error_message": "Button has placeholder text",
+						"repair_technique": "Provide a valid text to the \u003ccode\u003ebutton\u003c/code\u003e"
+					},
+					{
+						"check_id": 262,
+						"severityLevel": 0,
+						"error_message": "Image in the button is missing alt attribute",
+						"repair_technique": "Add an \u003ccode\u003ealt\u003c/code\u003e attribute to the image"
+					},
+					{
+						"check_id": 263,
+						"severityLevel": 0,
+						"error_message": "Image in the button has blank alt attribute",
+						"repair_technique": "Add a valid text to the \u003ccode\u003ealt\u003c/code\u003e attribute of the image"
+					},
+					{
+						"check_id": 257,
+						"severityLevel": 1,
+						"error_message": "Form control has both label and title associated with it",
+						"repair_technique": "Remove the \u003ccode\u003etitle\u003c/code\u003e attribute"
+					},
+					{
+						"check_id": 265,
+						"severityLevel": 1,
+						"error_message": "Image in the button is having alt attribute as placeholder text",
+						"repair_technique": "Provide a valid text to the \u003ccode\u003ealt\u003c/code\u003e attribute that describes the purpose of the button"
+					},
+					{
+						"check_id": 264,
+						"severityLevel": 2,
+						"error_message": "Image in the button has alt attribute same as file name",
+						"repair_technique": "Provide a valid text to the \u003ccode\u003ealt\u003c/code\u003e attribute that describes the purpose of the button"
+					}
+				],
+				"id": 1,
+				"name": "input|textarea|select|button",
+				"desc": "com.tcs.eaccess.checks.forms.AlternateTextCheck",
+				"weightage": 0.0,
+				"applicable": true
+			},
+			{
+				"checks": [
+					{
+						"check_id": 198,
+						"severityLevel": 3,
+						"error_message": "Location of alternate version of CAPTCHA not described in the text alternative",
+						"repair_technique": "The text alternative for CAPTCHA should describe the location of the alternate version of the CAPTCHA"
+					},
+					{
+						"check_id": 199,
+						"severityLevel": 3,
+						"error_message": "One or more elements missing purpose",
+						"repair_technique": "Provide text description of the purpose of each element"
+					},
+					{
+						"check_id": 200,
+						"severityLevel": 3,
+						"error_message": "No option to replay the audio CAPTCHA",
+						"repair_technique": "Provide means to replay the audio CAPTCHA; e.g a button or a link"
+					},
+					{
+						"check_id": 197,
+						"severityLevel": 2,
+						"error_message": "Alternate version of CAPTCHA missing",
+						"repair_technique": "Provide an accessible alternative to the image based CAPTCHA; e.g. sound based CAPTCHA"
+					}
+				],
+				"id": 74,
+				"name": "form",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.CaptchaCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 215,
+						"severityLevel": 3,
+						"error_message": "Alt text for one or more images is blank.",
+						"repair_technique": "Make sure that the images are for decorative purpose only"
+					},
+					{
+						"check_id": 216,
+						"severityLevel": 3,
+						"error_message": "Alt text for images may not be describing their purpose",
+						"repair_technique": "Make sure the \u003ccode\u003ealt\u003c/code\u003e attribute for images conveys the information present in them"
+					}
+				],
+				"id": 84,
+				"name": "div",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.CarouselCheck",
+				"weightage": 0.0,
+				"applicable": false
+			}
+		]
+	},
+	{
+		"subGroupId": 18,
+		"groupId": 18,
+		"levelId": 2,
+		"name": "1.2.1 Audio-only and Video-only (Prerecorded)",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 342,
+						"severityLevel": 1,
+						"error_message": "Missing text transcripts for any audio-only media",
+						"repair_technique": "Write text transcripts or place text transcript, or link to it, close to the media"
+					},
+					{
+						"check_id": 344,
+						"severityLevel": 1,
+						"error_message": "Missing text transcripts for any video-only media",
+						"repair_technique": "Provide text transcripts for any video-only media, close to the media"
+					},
+					{
+						"check_id": 345,
+						"severityLevel": 1,
+						"error_message": "Missing audio track for video only media",
+						"repair_technique": "Record an audio-track for any video-only media"
+					}
+				],
+				"id": 117,
+				"name": "audio|video",
+				"desc": "com.tcs.eaccess.checks.media.AudioOnlyVideoOnlyCheck",
+				"weightage": 0.0,
+				"applicable": true
+			}
+		]
+	},
+	{
+		"subGroupId": 19,
+		"groupId": 18,
+		"levelId": 2,
+		"name": "1.2.2 Captions (Prerecorded)",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-captions.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 332,
+						"severityLevel": 1,
+						"error_message": "Captions for pre-recorded audio for synchronized media are missing",
+						"repair_technique": "Provide captions using \u003ccode\u003etrack kind\u003d\u0026quot;captions\u0026quot;\u003c/code\u003e"
+					}
+				],
+				"id": 108,
+				"name": "video",
+				"desc": "com.tcs.eaccess.checks.multimedia.CaptionCheck",
+				"weightage": 0.0,
+				"applicable": true
+			}
+		]
+	},
+	{
+		"subGroupId": 20,
+		"groupId": 18,
+		"levelId": 2,
+		"name": "1.2.3 Audio Description or Media Alternative (Prerecorded)",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 333,
+						"severityLevel": 1,
+						"error_message": "Description of video for synchronized media is missing",
+						"repair_technique": "Provide description using \u003ccode\u003etrack kind\u003d\u0026quot;descriptions\u0026quot;\u003c/code\u003e"
+					}
+				],
+				"id": 109,
+				"name": "audio|video",
+				"desc": "com.tcs.eaccess.checks.multimedia.DescriptionCheck",
+				"weightage": 0.0,
+				"applicable": true
+			}
+		]
+	},
+	{
+		"subGroupId": 21,
+		"groupId": 18,
+		"levelId": 3,
+		"name": "1.2.4 Captions (Live)",
+		 "url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 343,
+						"severityLevel": 2,
+						"error_message": "Missing captions for the live video content",
+						"repair_technique": "Add captions to live video, probably through a content management system and to identify live video use hls or live or m3u8 in streaming files"
+					}
+				],
+				"id": 118,
+				"name": "audio|video",
+				"desc": "com.tcs.eaccess.checks.media.LiveCaptionCheck",
+				"weightage": 0.0,
+				"applicable": true
+				
+			}
+		]
+	},
+	{
+		"subGroupId": 22,
+		"groupId": 18,
+		"levelId": 3,
+		"name": "1.2.5 Audio Description (Prerecorded)",
+		 "url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 340,
+						"severityLevel": 1,
+						"error_message": "Missing Audio description",
+						"repair_technique": "Provide audio description in multiple languages using SMIL(Synchronized Multimedia Integration Language)"
+					}
+				],
+				"id": 115,
+				"name": "audio|video",
+				"desc": "com.tcs.eaccess.checks.media.audiodescriptiontrack",
+				"weightage": 0.0,
+				"applicable": true
+			}
+		]
+	},
+	{
+		"subGroupId": 23,
+		"groupId": 18,
+		"levelId": 4,
+		"name": "1.2.6 Sign Language (Prerecorded)",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-sign.html",
+		"checkpoints": []
+	},
+	{
+		"subGroupId": 24,
+		"groupId": 18,
+		"levelId": 4,
+		"name": "1.2.7 Extended Audio Description (Prerecorded)",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-extended-ad.html",
+		"checkpoints": []
+	},
+	{
+		"subGroupId": 25,
+		"groupId": 18,
+		"levelId": 4,
+		"name": "1.2.8 Media Alternative (Prerecorded)",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-text-doc.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 341,
+						"severityLevel": 1,
+						"error_message": "Missing equivalent media alternative",
+						"repair_technique": "Provide appropriate text alternative in multiple languages using SMIL(Synchronized Multimedia Integration Language)"
+					}
+				],
+				"id": 116,
+				"name": "audio|video",
+				"desc": "com.tcs.eaccess.checks.media.MediaTranscriptCheck",
+				"weightage": 0.0,
+				"applicable": true
+			}
+		]
+	},
+	{
+		"subGroupId": 26,
+		"groupId": 18,
+		"levelId": 4,
+		"name": "1.2.9 Audio-only (Live)",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-live-audio-only.html",
+		"checkpoints": []
+	},
+	{
+		"subGroupId": 27,
+		"groupId": 19,
+		"levelId": 2,
+		"name": "1.3.1 Info and Relationships",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 49,
+						"severityLevel": 0,
+						"error_message": "Page heading hierarchy is not meaningful",
+						"repair_technique": "First heading in the page should always be \u003ccode\u003eh1\u003c/code\u003e"
+					},
+					{
+						"check_id": 50,
+						"severityLevel": 0,
+						"error_message": "More than one heading level 1 are present on the page",
+						"repair_technique": "Confirm if more than one \u003ccode\u003eh1\u003c/code\u003e are required"
+					},
+					{
+						"check_id": 48,
+						"severityLevel": 0,
+						"error_message": "Page has no headings",
+						"repair_technique": "Use headings(\u003ccode\u003eh1\u003c/code\u003e - \u003ccode\u003eh6\u003c/code\u003e) in a logical order to mark content "
+					},
+					{
+						"check_id": 459,
+						"severityLevel": 0,
+						"error_message": "Page must contain a level-one heading",
+						"repair_technique": "Use headings(\u003ccode\u003eh1\u003c/code\u003e) to mark content"
+					}
+				],
+				"id": 8,
+				"name": "body",
+				"desc": "com.tcs.eaccess.checks.headings.HeadingCheck",
+				"weightage": 0.0,
+				"applicable": true
+			},
+			{
+				"checks": [
+					{
+						"check_id": 139,
+						"severityLevel": 3,
+						"error_message": "Blockquote should not be used for visual presentation purpose",
+						"repair_technique": "Make sure that the text in \u003ccode\u003eblockquote\u003c/code\u003e is a quotation"
+					}
+				],
+				"id": 9,
+				"name": "blockquote",
+				"desc": "com.tcs.eaccess.checks.blockquote.ValidityCheck",
+				"weightage": 0.0,
+				"applicable": true
+			},
+			{
+				"checks": [
+					{
+						"check_id": 52,
+						"severityLevel": 2,
+						"error_message": "List should not be used for visual presentation purpose",
+						"repair_technique": "Make sure that the list element represents an actual list and is not used for visual purpose only"
+					},
+					{
+						"check_id": 51,
+						"severityLevel": 0,
+						"error_message": "List content not marked up using list element",
+						"repair_technique": "Any content that is a direct child of list should be marked up using \u003ccode\u003eli\u003c/code\u003e element for \u003ccode\u003eul, ol\u003c/code\u003e and \u003ccode\u003edt, dd\u003c/code\u003e elements for \u003ccode\u003edl\u003c/code\u003e"
+					},
+					{
+						"check_id": 275,
+						"severityLevel": 1,
+						"error_message": "Empty list items",
+						"repair_technique": "Do not use blank list items. If the purpose is to create spacing between items, use CSS."
+					}
+				],
+				"id": 10,
+				"name": "ul|ol|dl",
+				"desc": "com.tcs.eaccess.checks.list.ValidityCheck",
+				"weightage": 0.0,
+				"applicable": true
+			},
+			{
+				"checks": [
+					{
+						"check_id": 59,
+						"severityLevel": 0,
+						"error_message": "b (bold) element used",
+						"repair_technique": "Replace it with \u003ccode\u003estrong\u003c/code\u003e element; or use CSS to set font-weight, if meant for visual purpose only"
+					},
+					{
+						"check_id": 60,
+						"severityLevel": 0,
+						"error_message": "i (italic) element used",
+						"repair_technique": "Replace it with \u003ccode\u003eem\u003c/code\u003e element; or use CSS to set font-style, if meant for visual purpose only"
+					},
+					{
+						"check_id": 61,
+						"severityLevel": 0,
+						"error_message": "basefont element used",
+						"repair_technique": "Use CSS instead to set font on \u003ccode\u003ebody, html\u003c/code\u003e"
+					},
+					{
+						"check_id": 62,
+						"severityLevel": 0,
+						"error_message": "font element used",
+						"repair_technique": "Use CSS instead to set font on elements"
+					}
+				],
+				"id": 12,
+				"name": "b|i|basefont|font",
+				"desc": "com.tcs.eaccess.checks.others.UsabilityCheck",
+				"weightage": 0.0,
+				"applicable": true
+			},
+			{
+				"checks": [
+					{
+						"check_id": 66,
+						"severityLevel": 0,
+						"error_message": "Caption is blank",
+						"repair_technique": "Provide a meaningful text to the \u003ccode\u003ecaption\u003c/code\u003e of the table"
+					},
+					{
+						"check_id": 67,
+						"severityLevel": 0,
+						"error_message": "Missing summary",
+						"repair_technique": "Provide \u003ccode\u003esummary\u003c/code\u003e attribute of the table "
+					},
+					{
+						"check_id": 68,
+						"severityLevel": 0,
+						"error_message": "Blank summary",
+						"repair_technique": "Provide meaningful text to the \u003ccode\u003esummary\u003c/code\u003e attribute of the table "
+					},
+					{
+						"check_id": 69,
+						"severityLevel": 0,
+						"error_message": "Summary duplicates the caption",
+						"repair_technique": "\u003ccode\u003esummary\u003c/code\u003e should describe the table and should not be the same as \u003ccode\u003ecaption\u003c/code\u003e"
+					},
+					{
+						"check_id": 70,
+						"severityLevel": 1,
+						"error_message": "Layout table contains caption",
+						"repair_technique": "Remove the \u003ccode\u003ecaption\u003c/code\u003e element or make sure that the table is used to represent data"
+					},
+					{
+						"check_id": 71,
+						"severityLevel": 1,
+						"error_message": "Layout table contains summary",
+						"repair_technique": "Remove the \u003ccode\u003esummary\u003c/code\u003e attribute or make sure that the table is used to represent data"
+					},
+					{
+						"check_id": 65,
+						"severityLevel": 2,
+						"error_message": "Missing caption",
+						"repair_technique": "Provide a meaningful \u003ccode\u003ecaption\u003c/code\u003e to the table"
+					},
+					{
+						"check_id": 72,
+						"severityLevel": 0,
+						"error_message": "Complex table missing id \u0026amp; header for identification of cells",
+						"repair_technique": "Make sure all the \u003ccode\u003eth\u003c/code\u003e elements have \u0027id\u0027 attribute and all \u003ccode\u003etd\u003c/code\u003e elements refer to headers through \u0027header\u0027 attribute; or split the table into multiple simple tables if possible"
+					},
+					{
+						"check_id": 245,
+						"severityLevel": 0,
+						"error_message": "Table missing scope of row and column headers",
+						"repair_technique": "Mark the \u003ccode\u003eth\u003c/code\u003e elements with \u0027scope\u0027 attribute defining their scope (row or col) "
+					},
+					{
+						"check_id": 279,
+						"severityLevel": 0,
+						"error_message": "Caption is short",
+						"repair_technique": "Provide a meaningful text to the \u003ccode\u003ecaption\u003c/code\u003e of the table"
+					},
+					{
+						"check_id": 280,
+						"severityLevel": 0,
+						"error_message": "Caption is long",
+						"repair_technique": "Provide a meaningful text to the \u003ccode\u003ecaption\u003c/code\u003e of the table"
+					},
+					{
+						"check_id": 281,
+						"severityLevel": 0,
+						"error_message": "Summary is short",
+						"repair_technique": "Provide a meaningful \u003ccode\u003esummary\u003c/code\u003e to the table "
+					},
+					{
+						"check_id": 282,
+						"severityLevel": 0,
+						"error_message": "Summary has placeholder text",
+						"repair_technique": "Provide a meaningful \u003ccode\u003esummary\u003c/code\u003e to the table "
+					},
+					{
+						"check_id": 284,
+						"severityLevel": 2,
+						"error_message": "Missing row and column headers",
+						"repair_technique": "Set \u003ccode\u003erole\u003d\u0026quot;presentation\u0026quot;\u003c/code\u003e if the table is used for layout purpose only"
+					},
+					{
+						"check_id": 64,
+						"severityLevel": 2,
+						"error_message": "Missing row and column headers",
+						"repair_technique": "Mark rows and columns using appropriate headers"
+					}
+				],
+				"id": 13,
+				"name": "table",
+				"desc": "com.tcs.eaccess.checks.tables.InfoAndRelationshipCheck",
+				"weightage": 0.0,
+				"applicable": true
+			},
+			{
+				"checks": [
+					{
+						"check_id": 45,
+						"severityLevel": 0,
+						"error_message": "Heading is blank",
+						"repair_technique": "Add a valid text to the heading"
+					},
+					{
+						"check_id": 46,
+						"severityLevel": 2,
+						"error_message": "Heading text is short",
+						"repair_technique": "Check that heading text is valid"
+					},
+					{
+						"check_id": 47,
+						"severityLevel": 2,
+						"error_message": "Heading text is verbose",
+						"repair_technique": "Check that heading text is valid"
+					},
+					{
+						"check_id": 41,
+						"severityLevel": 0,
+						"error_message": "Heading does not follow a meaningful hierarchy",
+						"repair_technique": "Heading level should be \u003ccode\u003eh2\u003c/code\u003e"
+					},
+					{
+						"check_id": 42,
+						"severityLevel": 0,
+						"error_message": "Heading does not follow a meaningful hierarchy",
+						"repair_technique": "Heading level should be \u003ccode\u003eh2\u003c/code\u003e or \u003ccode\u003eh3\u003c/code\u003e"
+					},
+					{
+						"check_id": 43,
+						"severityLevel": 0,
+						"error_message": "Heading does not follow a meaningful hierarchy",
+						"repair_technique": "Heading level should be \u003ccode\u003eh2\u003c/code\u003e or \u003ccode\u003eh3\u003c/code\u003e or \u003ccode\u003eh4\u003c/code\u003e"
+					},
+					{
+						"check_id": 44,
+						"severityLevel": 0,
+						"error_message": "Heading does not follow a meaningful hierarchy",
+						"repair_technique": "Heading level should be \u003ccode\u003eh2\u003c/code\u003e or \u003ccode\u003eh3\u003c/code\u003e or \u003ccode\u003eh4\u003c/code\u003e or \u003ccode\u003eh5\u003c/code\u003e"
+					},
+					{
+						"check_id": 335,
+						"severityLevel": 1,
+						"error_message": "Heading is misused",
+						"repair_technique": "Do not use heading to provide style on text"
+					}
+				],
+				"id": 7,
+				"name": "h1|h2|h3|h4|h5|h6",
+				"desc": "com.tcs.eaccess.checks.headings.ValidityCheck",
+				"weightage": 0.0,
+				"applicable": true
+			},
+			{
+				"checks": [
+					{
+						"check_id": 159,
+						"severityLevel": 1,
+						"error_message": "Items marked with menuitem role not owned by element with menu/menubar role",
+						"repair_technique": "Items marked with \u003ccode\u003erole\u003d”menuitem”\u003c/code\u003e should have an element with \u003ccode\u003erole\u003d”menu”\u003c/code\u003e or \u003ccode\u003erole\u003d”menubar”\u003c/code\u003e as its parent"
+					}
+				],
+				"id": 48,
+				"name": "ul|ol",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.MenubarCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 172,
+						"severityLevel": 1,
+						"error_message": "Items marked with treeitem role not owned by element with tree role",
+						"repair_technique": "Items marked with \u003ccode\u003erole\u003d”treeitem”\u003c/code\u003e should have an element with \u003ccode\u003erole\u003d”tree”\u003c/code\u003e as its parent"
+					}
+				],
+				"id": 57,
+				"name": "ul|ol",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.TreeviewCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 182,
+						"severityLevel": 0,
+						"error_message": "Datepicker column headers not marked properly",
+						"repair_technique": "Either use \u003ccode\u003eth\u003c/code\u003e to mark column headers or provide \u003ccode\u003erole\u003d”columnheader”\u003c/code\u003e in the grid"
+					}
+				],
+				"id": 65,
+				"name": "input",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.DatepickerCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 217,
+						"severityLevel": 3,
+						"error_message": "Inappropriate heading levels have been used",
+						"repair_technique": "Use headings(\u003ccode\u003eh1\u003c/code\u003e – \u003ccode\u003eh6\u003c/code\u003e) in a hierarchical order to mark content "
+					}
+				],
+				"id": 85,
+				"name": "div",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.CarouselCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 296,
+						"severityLevel": 1,
+						"error_message": "Grid is missing rows",
+						"repair_technique": "Provide \u003ccode\u003erole\u003d\u0026quot;row\u0026quot;\u003c/code\u003e on the following elements"
+					},
+					{
+						"check_id": 299,
+						"severityLevel": 1,
+						"error_message": "List is missing listitems",
+						"repair_technique": "Provide \u003ccode\u003erole\u003d\u0026quot;listitem\u0026quot;\u003c/code\u003e on the following elements"
+					},
+					{
+						"check_id": 301,
+						"severityLevel": 1,
+						"error_message": "Listbox is missing options",
+						"repair_technique": "Provide \u003ccode\u003erole\u003d\u0026quot;option\u0026quot;\u003c/code\u003e on the following elements"
+					},
+					{
+						"check_id": 309,
+						"severityLevel": 1,
+						"error_message": "Tabpanel not associated with respective tab",
+						"repair_technique": "Use the \u003ccode\u003earia-labelledby\u003c/code\u003e attribute on the tab panel to reference the tab"
+					},
+					{
+						"check_id": 314,
+						"severityLevel": 1,
+						"error_message": "Element targeted by \u003ccode\u003earia-activedescendant\u003c/code\u003e is not a descendant of the container",
+						"repair_technique": "Ensure that the element targeted by the aria-activedescendant attribute is either a descendant of the container in the DOM, or is a logical descendant as indicated by the aria-owns attribute. "
+					},
+					{
+						"check_id": 328,
+						"severityLevel": 1,
+						"error_message": "Parent role for element is missing",
+						"repair_technique": "Apply one the following roles as applicable to the logical or hierarchical parent of the element"
+					}
+				],
+				"id": 105,
+				"name": "all",
+				"desc": "com.tcs.eaccess.checks.markup.AriaCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 247,
+						"severityLevel": 2,
+						"error_message": "Blockquote should be used",
+						"repair_technique": "Use \u003ccode\u003eblockquote\u003c/code\u003e tag if the text is intended to be a quote"
+					}
+				],
+				"id": 97,
+				"name": "div|p|span|strong|em|h1|h2|h3|h4|h5|h6",
+				"desc": "com.tcs.eaccess.checks.markup.BlockquoteMisuseCheck",
+				"weightage": 0.0,
+				"applicable": true
+			},
+			{
+				"checks": [
+					{
+						"check_id": 246,
+						"severityLevel": 2,
+						"error_message": "Heading should be used",
+						"repair_technique": "Use proper heading ( \u003ccode\u003eh1 - h6\u003c/code\u003e ) markup if the text is intended to be a heading"
+					}
+				],
+				"id": 96,
+				"name": "div|p|span",
+				"desc": "com.tcs.eaccess.checks.markup.HeadingMisuseCheck",
+				"weightage": 0.0,
+				"applicable": true
+			},
+			{
+				"checks": [
+					{
+						"check_id": 334,
+						"severityLevel": 2,
+						"error_message": "Informational content has been added using CSS",
+						"repair_technique": "Make sure that the content is relevant to styling only"
+					}
+				],
+				"id": 110,
+				"name": "all",
+				"desc": "com.tcs.eaccess.checks.css.ContentCheck",
+				"weightage": 0.0,
+				"applicable": true
+			},
+			{
+				"checks": [
+					{
+						"check_id": 242,
+						"severityLevel": 1,
+						"error_message": "Radio button group not enclosed in a fieldset",
+						"repair_technique": "Place all radio buttons that are part of one group in a \u003ccode\u003efieldset\u003c/code\u003e with a \u003ccode\u003elegend\u003c/code\u003e"
+					},
+					{
+						"check_id": 244,
+						"severityLevel": 1,
+						"error_message": "Checkbox group not enclosed in a fieldset",
+						"repair_technique": "Place all checkboxes that are part of one group in a \u003ccode\u003efieldset\u003c/code\u003e with a \u003ccode\u003elegend\u003c/code\u003e"
+					}
+				],
+				"id": 95,
+				"name": "form",
+				"desc": "com.tcs.eaccess.checks.forms.RadioCheckboxGroupCheck",
+				"weightage": 0.0,
+				"applicable": true
+			},
+			{
+				"checks": [
+					{
+						"check_id": 259,
+						"severityLevel": 1,
+						"error_message": "Fieldset should not be used for visual presentation purpose only",
+						"repair_technique": "Make sure that the \u003ccode\u003efieldset\u003c/code\u003e contains input fields that are grouped together and is not used for visual purpose only"
+					},
+					{
+						"check_id": 241,
+						"severityLevel": 1,
+						"error_message": "Fieldset is missing legend",
+						"repair_technique": "Add a \u003ccode\u003elegend\u003c/code\u003e to the fieldset"
+					},
+					{
+						"check_id": 243,
+						"severityLevel": 1,
+						"error_message": "Fieldset contains blank legend",
+						"repair_technique": "Add meaningful text to the \u003ccode\u003elegend\u003c/code\u003e in the fieldset"
+					}
+				],
+				"id": 99,
+				"name": "fieldset",
+				"desc": "com.tcs.eaccess.checks.forms.FieldsetLegendCheck",
+				"weightage": 0.0,
+				"applicable": true
+			},
+			{
+				"checks": [
+					{
+						"check_id": 274,
+						"severityLevel": 0,
+						"error_message": "Empty Paragraph",
+						"repair_technique": "Add some text to the paragraph. If it is being used to provide line break, use \u003ccode\u003ebr\u003c/code\u003e instead."
+					}
+				],
+				"id": 101,
+				"name": "p",
+				"desc": "com.tcs.eaccess.checks.paragraph.EmptyCheck",
+				"weightage": 0.0,
+				"applicable": true
+			}
+		]
+	},
+	{
+		"subGroupId": 28,
+		"groupId": 19,
+		"levelId": 2,
+		"name": "1.3.2 Meaningful Sequence",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-sequence.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 201,
+						"severityLevel": 2,
+						"error_message": "One or more elements do not appear in a meaningful sequence",
+						"repair_technique": "Make sure that the focus order of elements is meaningful and hierarchical"
+					}
+				],
+				"id": 75,
+				"name": "form",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.CaptchaCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 162,
+						"severityLevel": 2,
+						"error_message": "One or more elements do not appear in a meaningful sequence",
+						"repair_technique": "Make sure that the focus order of elements is meaningful and hierarchical"
+					}
+				],
+				"id": 51,
+				"name": "ul|ol",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.MenubarCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 175,
+						"severityLevel": 2,
+						"error_message": "One or more elements do not appear in a meaningful sequence",
+						"repair_technique": "Make sure that the focus order of elements is meaningful and hierarchical"
+					}
+				],
+				"id": 60,
+				"name": "ul|ol",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.TreeviewCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 191,
+						"severityLevel": 2,
+						"error_message": "One or more elements do not appear in a meaningful sequence in the datepicker",
+						"repair_technique": "Make sure that the focus order of elements is meaningful and hierarchical"
+					}
+				],
+				"id": 69,
+				"name": "input",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.DatepickerCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 220,
+						"severityLevel": 3,
+						"error_message": "One or more elements do not appear in a meaningful sequence",
+						"repair_technique": "Make sure that the focus order of elements is meaningful and hierarchical"
+					}
+				],
+				"id": 88,
+				"name": "div",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.CarouselCheck",
+				"weightage": 0.0,
+				"applicable": false
+			}
+		]
+	},
+	{
+		"subGroupId": 29,
+		"groupId": 19,
+		"levelId": 2,
+		"name": "1.3.3 Sensory Characteristics",
+		 "url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html",
+		"checkpoints": []
+	},
+	{
+		"subGroupId": 80,
+		"groupId": 19,
+		"levelId": 3,
+		"name": "1.3.5 Identify Input Purpose",
+		"url": "https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 351,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the First Name input field",
+						"repair_technique": "Add an autocomplete attribute to the first name input field with its value as given-name."
+					},
+					{
+						"check_id": 406,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the First Name input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='given-name') to the first name input field"
+					},
+	               	{
+						"check_id": 403,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Last Name input field",
+						"repair_technique": "Add an autocomplete attribute to the last name input field with its value as family-name."
+					},
+					{
+						"check_id": 407,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Last Name input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='family-name') to the first name input field."
+					},
+					{
+						"check_id": 353,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Middle Name input field",
+						"repair_technique": "Add an autocomplete attribute to the middle name input field with its value as additional-name."
+					},
+					{
+						"check_id": 408,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Middle Name input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='additional-name') to the middle name input field."
+					},
+					{
+						"check_id": 354,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Full Name input field",
+						"repair_technique": "Add an autocomplete attribute to the full name input field with its value as name."
+					},
+					{
+						"check_id": 409,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Full Name input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='name') to the full name input field."
+					},
+					{
+						"check_id": 355,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Email input field",
+						"repair_technique": "Add an autocomplete attribute to the Email input field with its value as email."
+					},
+					{
+						"check_id": 410,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Email input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='email') to the email name input field."
+					},
+					{
+						"check_id": 356,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Username input field",
+						"repair_technique": "Add an autocomplete attribute to the username input field with its value as username."
+					},
+					{
+						"check_id": 411,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Username input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='username') to the username input field."
+					},
+					{
+						"check_id": 357,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Prefix input field",
+						"repair_technique": "Add an autocomplete attribute to the Prefix input field with its value as honorific-prefix."
+					},
+					{
+						"check_id": 412,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Prefix input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='honorific-prefix') to the prefix input field."
+					},
+					{
+						"check_id": 358,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Suffix input field",
+						"repair_technique": "Add an autocomplete attribute to the Suffix input field with its value as honorific-suffix."
+					},
+					{
+						"check_id": 413,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Suffix input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='honorific-suffix') to the suffix input field."
+					},
+					{
+						"check_id": 359,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Nickname input field",
+						"repair_technique": "Add an autocomplete attribute to the Nickname input field with its value as nickname."
+					},
+					{
+						"check_id": 414,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Nickname input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='nickname') to the nickname input field."
+					},
+					{
+						"check_id": 360,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Jobtitle input field",
+						"repair_technique": "Add an autocomplete attribute to the Jobtitle input field with its value as organization-title."
+					},
+					{
+						"check_id": 415,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Jobtitle input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='organization-title') to the jobtitle input field."
+					},
+					{
+						"check_id": 361,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the New Password input field",
+						"repair_technique": "Add an autocomplete attribute to the New Password input field with its value as new-password."
+					},
+					{
+						"check_id": 416,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the New Password input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='new-password') to the new Password input field."
+					},
+					{
+						"check_id": 362,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Current Password input field",
+						"repair_technique": "Add an autocomplete attribute to the Current Password input field with its value as current-password."
+					},
+					{
+						"check_id": 417,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Current Password input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='current-password') to the current Password input field."
+					}
+					,
+					{
+						"check_id": 363,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Organization input field",
+						"repair_technique": "Add an autocomplete attribute to the organization input field with its value as organization."
+					},
+					{
+						"check_id": 418,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Organization input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='organization') to the organization input field."
+					}
+					,
+					{
+						"check_id": 364,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Street Address input field",
+						"repair_technique": "Add an autocomplete attribute to the Street Address input field with its value as street-address."
+					},
+					{
+						"check_id": 419,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Street Address input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='street-address') to the street Address input field."
+					}
+					,
+					{
+						"check_id": 365,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Address Line1 input field",
+						"repair_technique": "Add an autocomplete attribute to the Address Line1 input field with its value as address-line1."
+					},
+					{
+						"check_id": 420,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Address Line1 input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='address-line1') to the address line1 input field."
+					}
+					,
+					{
+						"check_id": 366,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Address Line2 input field",
+						"repair_technique": "Add an autocomplete attribute to the Address Line2 input field with its value as address-line2."
+					},
+					{
+						"check_id": 421,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Address Line2 input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='address-line2') to the address line2 input field."
+					}
+					,
+					{
+						"check_id": 367,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Address Line3 input field",
+						"repair_technique": "Add an autocomplete attribute to the Address Line3 input field with its value as address-line3."
+					},
+					{
+						"check_id": 422,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Address Line3 input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='address-line3') to the address line3 input field."
+					}
+					,
+					{
+						"check_id": 368,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Address Level1 input field",
+						"repair_technique": "Add an autocomplete attribute to the Address Level1 input field with its value as address-level1."
+					},
+					{
+						"check_id": 423,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Address Level1 input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='address-level1') to the address level1 input field."
+					}
+					,
+					{
+						"check_id": 369,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Address Level2 input field",
+						"repair_technique": "Add an autocomplete attribute to the Address Level2 input field with its value as address-level2."
+					},
+					{
+						"check_id": 424,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Address Level2 input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='address-level2') to the address level2 input field."
+					}
+					,
+					{
+						"check_id": 370,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Address Level3 input field",
+						"repair_technique": "Add an autocomplete attribute to the Address Level3 input field with its value as address-level3."
+					},
+					{
+						"check_id": 425,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Address Level3 input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='address-level3') to the address level3 input field."
+					}
+					,
+					{
+						"check_id": 371,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Address Level4 input field",
+						"repair_technique": "Add an autocomplete attribute to the Address Level4 input field with its value as address-level4."
+					},
+					{
+						"check_id": 426,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Address Level4 input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='address-level4') to the address level4 input field."
+					}
+					,
+					{
+						"check_id": 372,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Country input field",
+						"repair_technique": "Add an autocomplete attribute to the Country input field with its value as country."
+					},
+					{
+						"check_id": 427,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Country input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='country') to the country input field."
+					},
+					{
+						"check_id": 373,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Country Name input field",
+						"repair_technique": "Add an autocomplete attribute to the Country Name input field with its value as country-name."
+					},
+					{
+						"check_id": 428,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Country Name input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='country-name') to the country name input field."
+					}
+					,
+					{
+						"check_id": 374,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Postal Code input field",
+						"repair_technique": "Add an autocomplete attribute to the Postal Code field with its value as postal-code."
+					},
+					{
+						"check_id": 429,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Postal Code input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='postal-code') to the country input field."
+					},
+					{
+						"check_id": 375,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Full name in Credit Cared  input field",
+						"repair_technique": "Add an autocomplete attribute to the Given name in Credit Cared input field with its value as cc-given-name."
+					},
+					{
+						"check_id": 430,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Full name in Credit Cared input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='cc-given-name') to the full name in Credit Cared input field."
+					}
+					,
+					{
+						"check_id": 376,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Additional name in Credit Cared input field",
+						"repair_technique": "Add an autocomplete attribute to the Additional name in Credit Cared  input field with its value as cc-additional-name."
+					},
+					{
+						"check_id": 431,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Additional name in Credit Cared input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='cc-additional-name') to the Additional name in Credit Cared input field."
+					},
+					{
+						"check_id": 377,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Family Name CC input field",
+						"repair_technique": "Add an autocomplete attribute to the Family Name CC input field with its value as cc-family-name."
+					},
+					{
+						"check_id": 432,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Family Name CC input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='cc-family-name') to the Family Name CC input field."
+					}
+					,
+					{
+						"check_id": 378,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Credit Card Number in Credit Cared input field",
+						"repair_technique": "Add an autocomplete attribute to the Credit Card Number in Credit Cared  input field with its value as cc-number."
+					},
+					{
+						"check_id": 433,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Credit Card Number in Credit Cared input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='cc-number') to the Credit Card Number in Credit Cared input field."
+					},
+					{
+						"check_id": 379,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Expiration date CC input field",
+						"repair_technique": "Add an autocomplete attribute to the Expiration date CC input field with its value as cc-exp."
+					},
+					{
+						"check_id": 434,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Expiration date CC input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='cc-exp') to the Expiration date CC input field."
+					}
+					,
+					{
+						"check_id": 380,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Expiration Month in Credit Cared input field",
+						"repair_technique": "Add an autocomplete attribute to the Expiration Month in Credit Cared  input field with its value as cc-exp-month."
+					},
+					{
+						"check_id": 435,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Expiration Month in Credit Cared input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='cc-exp-month') to the Expiration Month in Credit Cared input field."
+					},
+					{
+						"check_id": 381,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Expiration Year in Credit Cared input field",
+						"repair_technique": "Add an autocomplete attribute to the Expiration Year in Credit Cared input field with its value as cc-exp-year."
+					},
+					{
+						"check_id": 436,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Expiration Year in Credit Cared input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='cc-exp-year') to the Expiration Year in Credit Cared input field."
+					}
+					,
+					{
+						"check_id": 382,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the CVV or CVC in Credit Cared input field",
+						"repair_technique": "Add an autocomplete attribute to the CVV or CVC in Credit Cared input field with its value as cc-csc."
+					},
+					{
+						"check_id": 437,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the CVV or CVC in Credit Cared input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='cc-csc') to the CVV or CVC in Credit Cared input field."
+					}
+					,
+					{
+						"check_id": 383,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Credit Cared Type input field",
+						"repair_technique": "Add an autocomplete attribute to the Credit Cared Type input field with its value as cc-type."
+					},
+					{
+						"check_id": 438,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Credit Cared Type input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='cc-type') to the Credit Cared Type input field."
+					}
+					,
+					{
+						"check_id": 384,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Transaction Currency input field",
+						"repair_technique": "Add an autocomplete attribute to the Transaction Currency input field with its value as transaction-currency."
+					},
+					{
+						"check_id": 439,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Transaction Currency input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='transaction-currency') to the Transaction Currency input field."
+					}
+					,
+					{
+						"check_id": 385,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Transaction Amount input field",
+						"repair_technique": "Add an autocomplete attribute to the Transaction Amount input field with its value as transaction-amount."
+					},
+					{
+						"check_id": 440,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Transaction Amount input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='transaction-amount') to the Transaction Amount input field."
+					}
+					,
+					{
+						"check_id": 386,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Language input field",
+						"repair_technique": "Add an autocomplete attribute to the Language input field with its value as language."
+					},
+					{
+						"check_id": 441,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Language input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='language') to the Language input field."
+					}
+					,
+					{
+						"check_id": 387,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Birthday input field",
+						"repair_technique": "Add an autocomplete attribute to the Birthday input field with its value as bday."
+					},
+					{
+						"check_id": 442,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Birthday input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='bday') to the Birthday input field."
+					}
+					,
+					{
+						"check_id": 388,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Day component of birthday input field",
+						"repair_technique": "Add an autocomplete attribute to the Day component of birthday input field with its value as bday-day."
+					},
+					{
+						"check_id": 443,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Day component of birthday input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='bday-day') to the Day component of birthday input field."
+					}
+					,
+					{
+						"check_id": 389,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Month component of birthday input field",
+						"repair_technique": "Add an autocomplete attribute to the Month component of birthday input field with its value as bday-month."
+					},
+					{
+						"check_id": 444,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Month component of birthday input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='bday-month') to the Month component of birthday input field."
+					}
+					,
+					{
+						"check_id": 404,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Year component of birthday input field",
+						"repair_technique": "Add an autocomplete attribute to the Year component of birthday input field with its value as bday-year."
+					},
+					{
+						"check_id": 445,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Year component of birthday input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='bday-year') to the Year component of birthday input field."
+					}
+					,
+					{
+						"check_id": 390,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Gender input field",
+						"repair_technique": "Add an autocomplete attribute to the Gender input field with its value as sex."
+					},
+					{
+						"check_id": 446,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Gender input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='sex') to the Gender input field."
+					}
+					,
+					{
+						"check_id": 391,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Url input field",
+						"repair_technique": "Add an autocomplete attribute to the Url input field with its value as url."
+					},
+					{
+						"check_id": 447,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Url input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='url') to the Url input field."
+					}
+					,
+					{
+						"check_id": 392,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Photo input field",
+						"repair_technique": "Add an autocomplete attribute to the Photo input field with its value as photo."
+					},
+					{
+						"check_id": 448,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Photo input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='photo') to the Photo input field."
+					}
+					,
+					{
+						"check_id": 393,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Telephone number without the county code input field",
+						"repair_technique": "Add an autocomplete attribute to the Telephone number without the county code input field with its value as tel-national."
+					},
+					{
+						"check_id": 449,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Telephone number without the county code input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='tel-national') to the Telephone number without the county code input field."
+					}
+					,
+					{
+						"check_id": 394,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the  Area code component of the telephone number input field",
+						"repair_technique": "Add an autocomplete attribute to the  Area code component of the telephone number input field with its value as tel-area-code."
+					},
+					{
+						"check_id": 450,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Area code component of the telephone number input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='tel-area-code') to the Area code component of the telephone number input field."
+					}
+					,
+					{
+						"check_id": 395,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Telephone number without the country code input field",
+						"repair_technique": "Add an autocomplete attribute to the Telephone number without the country code input field with its value as tel-local."
+					},
+					{
+						"check_id": 451,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Telephone number without the country code input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='tel-local') to the Telephone number without the country code input field."
+					}
+					,
+					{
+						"check_id": 396,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Telephone number input field",
+						"repair_technique": "Add an autocomplete attribute to the Telephone number input field with its value as tel."
+					},
+					{
+						"check_id": 452,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Telephone number input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='tel') to the Telephone number input field."
+					}
+					,
+					{
+						"check_id": 398,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Country code component of the telephone number input field",
+						"repair_technique": "Add an autocomplete attribute to the Country code component of the telephone number input field with its value as tel-country-code."
+					},
+					{
+						"check_id": 453,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Country code component of the telephone number input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='tel-country-code') to the Country code component of the telephone number input field."
+					}
+					,
+					{
+						"check_id": 397,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the  First part of the component of the telephone number input field",
+						"repair_technique": "Add an autocomplete attribute to the  First part of the component of the telephone number input field with its value as tel-local-prefix."
+					},
+					{
+						"check_id": 454,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the First part of the component of the telephone number input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='tel-local-prefix') to the First part of the component of the telephone number input field."
+					}
+					,
+					{
+						"check_id": 399,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Second part of the component of the telephone number input field",
+						"repair_technique": "Add an autocomplete attribute to the Second part of the component of the telephone number input field with its value as tel-local-suffix."
+					},
+					{
+						"check_id": 455,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Second part of the component of the telephone number input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='tel-local-suffix') to the Second part of the component of the telephone number input field."
+					}
+					,
+					{
+						"check_id": 400,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Telephone number internal extension code input field",
+						"repair_technique": "Add an autocomplete attribute to the Telephone number internal extension code input field with its value as tel-extension."
+					},
+					{
+						"check_id": 456,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Telephone number internal extension code input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='tel-extension') to the Telephone number internal extension code input field."
+					}
+					,
+					{
+						"check_id": 402,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the URL representing an instant messaging protocol endpoint input field",
+						"repair_technique": "Add an autocomplete attribute to the URL representing an instant messaging protocol endpoint input field with its value as impp."
+					},
+					{
+						"check_id": 457,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the URL representing an instant messaging protocol endpoint input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='impp') to the URL representing an instant messaging protocol endpoint input field."
+					}
+					,
+					{
+						"check_id": 405,
+						"severityLevel": 1,
+						"error_message": "Autocomplete attribute is missing for the Full name in CC input field",
+						"repair_technique": "Add an autocomplete attribute to the Full name in CC input field with its value as cc-name."
+					},
+					{
+						"check_id": 458,
+						"severityLevel": 1,
+						"error_message": "Appropriate autofill token is not specified for the Full name in CC input field.",
+						"repair_technique": "Add the correct autofill token (autocomplete='cc-name') to the Full name in CC input field."
+					}
+					
+				],
+				"id": 122,
+				"name": "input",
+				"desc": "com.tcs.eaccess.checks.input.InputPurpose",
+				"weightage": 0.0,
+				"applicable": true
+			}
+	]
+	},
+	{
+		"subGroupId": 30,
+		"groupId": 20,
+		"levelId": 2,
+		"name": "1.4.1 Use of Color",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 235,
+						"severityLevel": 2,
+						"error_message": "Color is the only means of differentiating link and text",
+						"repair_technique": "Ensure that color is not the only visual means of differentiating link and plain text. Visual means such as underline, etc. may be used."
+					}
+				],
+				"id": 93,
+				"name": "a",
+				"desc": "com.tcs.eaccess.checks.visual.LinkDecorationCheck",
+				"weightage": 0.0,
+				"applicable": true
+			}
+		]
+	},
+	{
+		"subGroupId": 48,
+		"groupId": 23,
+		"levelId": 4,
+		"name": "2.3.2 Three Flashes",
+		 "url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-three-times.html",
+		"checkpoints": []
+	},
+	{
+		"subGroupId": 49,
+		"groupId": 24,
+		"levelId": 2,
+		"name": "2.4.1 Bypass Blocks",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-skip.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 74,
+						"severityLevel": 3,
+						"error_message": "Skip link description may not be meaningful",
+						"repair_technique": "Make sure that the skip link description describes its location"
+					},
+					{
+						"check_id": 227,
+						"severityLevel": 2,
+						"error_message": "Skip link destination missing on page",
+						"repair_technique": "Make sure the skip link points to a valid location in the page"
+					},
+					{
+						"check_id": 228,
+						"severityLevel": 1,
+						"error_message": "Skip link not navigating to the desired location",
+						"repair_technique": "Provide the \u003ccode\u003eid\u003c/code\u003e of the desired location as the \u003ccode\u003ehref\u003c/code\u003e of the skip link"
+					},
+					{
+						"check_id": 250,
+						"severityLevel": 2,
+						"error_message": "Link may not skip to the main content",
+						"repair_technique": "Make sure that the links skips to main content and the same is conveyed in the link text"
+					},
+					{
+						"check_id": 249,
+						"severityLevel": 2,
+						"error_message": "Skip to main content link is not the first focusable element on the page",
+						"repair_technique": "Make sure that the skip to main content link is first to recieve focus on the page"
+					},
+					{
+						"check_id": 73,
+						"severityLevel": 2,
+						"error_message": "Skip link not visible",
+						"repair_technique": "Ensure that the skip link is either visible always or when it receives focus"
+					}
+				],
+				"id": 14,
+				"name": "a",
+				"desc": "com.tcs.eaccess.checks.links.SkipLinkCheck",
+				"weightage": 0.0,
+				"applicable": true
+			},
+			{
+				"checks": [
+					{
+						"check_id": 236,
+						"severityLevel": 2,
+						"error_message": "Page contains no skip links",
+						"repair_technique": "Provide links to skip over blocks of content"
+					}
+				],
+				"id": 94,
+				"name": "body",
+				"desc": "com.tcs.eaccess.checks.links.SkipLinkAvailabilityCheck",
+				"weightage": 0.0,
+				"applicable": true
+			}
+		]
+	},
+	{
+		"subGroupId": 50,
+		"groupId": 24,
+		"levelId": 2,
+		"name": "2.4.2 Page Titled",
+		 "url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 83,
+						"severityLevel": 0,
+						"error_message": "Missing page title",
+						"repair_technique": "Add a \u003ccode\u003etitle\u003c/code\u003eto the page"
+					},
+					{
+						"check_id": 84,
+						"severityLevel": 0,
+						"error_message": "Page title is blank",
+						"repair_technique": "Add a valid text to the page \u003ccode\u003etitle\u003c/code\u003e"
+					},
+					{
+						"check_id": 85,
+						"severityLevel": 2,
+						"error_message": "Page title text is short",
+						"repair_technique": "Check that the page \u003ccode\u003etitle\u003c/code\u003e is valid"
+					},
+					{
+						"check_id": 86,
+						"severityLevel": 2,
+						"error_message": "Page title text is verbose",
+						"repair_technique": "Check that the page \u003ccode\u003etitle\u003c/code\u003e is valid"
+					},
+					{
+						"check_id": 87,
+						"severityLevel": 0,
+						"error_message": "Page title is placeholder text",
+						"repair_technique": "Add a meaningful text to the page \u003ccode\u003etitle\u003c/code\u003e"
+					},
+					{
+						"check_id": 88,
+						"severityLevel": 3,
+						"error_message": "Page title may not be meaningful",
+						"repair_technique": "Check that the \u003ccode\u003etitle\u003c/code\u003e of the page is descriptive and relevant to the contents of that page"
+					}
+				],
+				"id": 16,
+				"name": "head",
+				"desc": "com.tcs.eaccess.checks.pageinfo.TitleCheck",
+				"weightage": 0.0,
+				"applicable": true
+			}
+		]
+	},
+	{
+		"subGroupId": 51,
+		"groupId": 24,
+		"levelId": 2,
+		"name": "2.4.3 Focus Order",
+		 "url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 201,
+						"severityLevel": 2,
+						"error_message": "One or more elements do not appear in a meaningful sequence",
+						"repair_technique": "Make sure that the focus order of elements is meaningful and hierarchical"
+					}
+				],
+				"id": 75,
+				"name": "form",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.CaptchaCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 162,
+						"severityLevel": 2,
+						"error_message": "One or more elements do not appear in a meaningful sequence",
+						"repair_technique": "Make sure that the focus order of elements is meaningful and hierarchical"
+					}
+				],
+				"id": 51,
+				"name": "ul|ol",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.MenubarCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 175,
+						"severityLevel": 2,
+						"error_message": "One or more elements do not appear in a meaningful sequence",
+						"repair_technique": "Make sure that the focus order of elements is meaningful and hierarchical"
+					}
+				],
+				"id": 60,
+				"name": "ul|ol",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.TreeviewCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 191,
+						"severityLevel": 2,
+						"error_message": "One or more elements do not appear in a meaningful sequence in the datepicker",
+						"repair_technique": "Make sure that the focus order of elements is meaningful and hierarchical"
+					}
+				],
+				"id": 69,
+				"name": "input",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.DatepickerCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 220,
+						"severityLevel": 3,
+						"error_message": "One or more elements do not appear in a meaningful sequence",
+						"repair_technique": "Make sure that the focus order of elements is meaningful and hierarchical"
+					}
+				],
+				"id": 88,
+				"name": "div",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.CarouselCheck",
+				"weightage": 0.0,
+				"applicable": false
+			}
+		]
+	},
+	{
+		"subGroupId": 52,
+		"groupId": 24,
+		"levelId": 2,
+		"name": "2.4.4 Link Purpose (In Context)",
+		 "url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 55,
+						"severityLevel": 2,
+						"error_message": "Javascript link used",
+						"repair_technique": "Use a normal \u003ccode\u003ehref\u003c/code\u003e attribute; unless necessary"
+					},
+					{
+						"check_id": 56,
+						"severityLevel": 0,
+						"error_message": "Empty link text",
+						"repair_technique": "Provide a meaningful text to the \u003ccode\u003ea\u003c/code\u003e element"
+					},
+					{
+						"check_id": 58,
+						"severityLevel": 3,
+						"error_message": "Link text may not be meaningful",
+						"repair_technique": "Make sure that the link text meaningfully describes its purpose and destination alone; or when read in context to its surrounding text"
+					},
+					{
+						"check_id": 57,
+						"severityLevel": 2,
+						"error_message": "Suspicious link text",
+						"repair_technique": "Check that the purpose of the link is conveyed through the description in the same sentence, list item, paragraph, table cell, table header associated with the link\u0027s cell in a data table, or heading preceding the link"
+					},
+					{
+						"check_id": 124,
+						"severityLevel": 2,
+						"error_message": "Link to a sound file must have a text transcript",
+						"repair_technique": "Make sure that an equivalent link to a text transcript of the sound file exists in the document"
+					},
+					{
+						"check_id": 54,
+						"severityLevel": 2,
+						"error_message": "Link has blank href attribute",
+						"repair_technique": "Add a valid url in the \u003ccode\u003ehref\u003c/code\u003e attribute or # if the link does not point to a url."
+					},
+					{
+						"check_id": 53,
+						"severityLevel": 2,
+						"error_message": "Link is missing href attribute",
+						"repair_technique": "Add a valid \u003ccode\u003ehref\u003c/code\u003e attribute to the \u003ccode\u003ea\u003c/code\u003e element"
+					},
+					{
+						"check_id": 234,
+						"severityLevel": 1,
+						"error_message": "Link title replicates its text",
+						"repair_technique": "Provide a meaningful title to the \u003ccode\u003ea\u003c/code\u003e element that is different from its text"
+					},
+					{
+						"check_id": 248,
+						"severityLevel": 2,
+						"error_message": "Empty link text",
+						"repair_technique": "Provide a meaningful text to the \u003ccode\u003ea\u003c/code\u003e element"
+					}
+				],
+				"id": 11,
+				"name": "a",
+				"desc": "com.tcs.eaccess.checks.links.ValidityCheck",
+				"weightage": 0.0,
+				"applicable": true
+			},
+			{
+				"checks": [
+					{
+						"check_id": 160,
+						"severityLevel": 3,
+						"error_message": "One or more links in the menubar may not have meaningful text",
+						"repair_technique": "Make sure that the link text meaningfully describes its purpose and destination"
+					}
+				],
+				"id": 49,
+				"name": "ul|ol",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.MenubarCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 173,
+						"severityLevel": 2,
+						"error_message": "One or more links in the tree may not have meaningful text",
+						"repair_technique": "Make sure that the link text meaningfully describes its purpose and destination"
+					}
+				],
+				"id": 58,
+				"name": "ul|ol",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.TreeviewCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 189,
+						"severityLevel": 2,
+						"error_message": "One or more links in the datepicker may not have meaningful text",
+						"repair_technique": "Make sure that the link text meaningfully describes its purpose and destination"
+					}
+				],
+				"id": 67,
+				"name": "input",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.DatepickerCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 202,
+						"severityLevel": 3,
+						"error_message": "One or more links in the CAPTCHA may not have meaningful text",
+						"repair_technique": "Make sure that the link text meaningfully describes its purpose and destination"
+					}
+				],
+				"id": 76,
+				"name": "form",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.CaptchaCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 218,
+						"severityLevel": 3,
+						"error_message": "One or more links in the carousel may not have meaningful text",
+						"repair_technique": "Make sure that the link text meaningfully describes its purpose and destination"
+					}
+				],
+				"id": 86,
+				"name": "div",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.CarouselCheck",
+				"weightage": 0.0,
+				"applicable": false
+			}
+		]
+	},
+	{
+		"subGroupId": 53,
+		"groupId": 24,
+		"levelId": 3,
+		"name": "2.4.5 Multiple Ways",
+		 "url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-mult-loc.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 350,
+						"severityLevel": 1,
+						"error_message": "Multiple ways are not available to locate the web page within the set of web pages",
+						"repair_technique": "Provide at least any two of the following functionalities to locate a web page within the set of web pages: 1. Table of contents 2. Links to navigate to related web pages 3. Site map 4. Search mechanism 5. List of links to all the web pages"
+					}
+				],
+				"id": 123,
+				"name": "html",
+				"desc": "com.tcs.eaccess.checks.multiple.Multipleways",
+				"weightage": 0.0,
+				"applicable": true
+			}
+	]
+	},
+	{
+		"subGroupId": 54,
+		"groupId": 24,
+		"levelId": 3,
+		"name": "2.4.6 Headings and Labels",
+		 "url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 246,
+						"severityLevel": 2,
+						"error_message": "Heading should be used",
+						"repair_technique": "Use proper heading ( \u003ccode\u003eh1 - h6\u003c/code\u003e ) markup if the text is intended to be a heading"
+					}
+				],
+				"id": 96,
+				"name": "div|p|span",
+				"desc": "com.tcs.eaccess.checks.markup.HeadingMisuseCheck",
+				"weightage": 0.0,
+				"applicable": true
+			}
+		]
+	},
+	{
+		"subGroupId": 55,
+		"groupId": 24,
+		"levelId": 3,
+		"name": "2.4.7 Focus Visible",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 143,
+						"severityLevel": 1,
+						"error_message": "Focus is not visible on the element",
+						"repair_technique": "Provide a visible focus using CSS \u003ccode\u003eoutline\u003c/code\u003e property or by altering the foreground and background colors"
+					}
+				],
+				"id": 37,
+				"name": "input|textarea|select|button|a|area",
+				"desc": "com.tcs.eaccess.checks.keyboard.VisibleFocusCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 153,
+						"severityLevel": 1,
+						"error_message": "Focus on slider is not visible",
+						"repair_technique": "Provide a visible focus using CSS \u003ccode\u003eoutline\u003c/code\u003e property or by altering the foreground and background colors"
+					}
+				],
+				"id": 44,
+				"name": "div|span|a",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.SliderCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 163,
+						"severityLevel": 1,
+						"error_message": "One or more elements do not have a visible keyboard focus indicator",
+						"repair_technique": "Provide a visible focus using CSS \u003ccode\u003eoutline\u003c/code\u003e property or by altering the foreground and background colors"
+					}
+				],
+				"id": 52,
+				"name": "ul|ol",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.MenubarCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 176,
+						"severityLevel": 1,
+						"error_message": "One or more elements do not have a visible keyboard focus indicator",
+						"repair_technique": "Provide a visible focus using CSS \u003ccode\u003eoutline\u003c/code\u003e property or by altering the foreground and background colors"
+					}
+				],
+				"id": 61,
+				"name": "ul|ol",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.TreeviewCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 192,
+						"severityLevel": 1,
+						"error_message": "One or more elements do not have a visible keyboard focus indicator in the datepicker",
+						"repair_technique": "Provide a visible focus using CSS \u003ccode\u003eoutline\u003c/code\u003e property or by altering the foreground and background colors"
+					}
+				],
+				"id": 70,
+				"name": "input",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.DatepickerCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 204,
+						"severityLevel": 3,
+						"error_message": "One or more elements do not have a visible keyboard focus indicator",
+						"repair_technique": "Provide a visible focus using CSS \u003ccode\u003eoutline\u003c/code\u003e property or by altering the foreground and background colors"
+					}
+				],
+				"id": 78,
+				"name": "form",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.CaptchaCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 221,
+						"severityLevel": 3,
+						"error_message": "One or more elements do not have a visible keyboard focus indicator",
+						"repair_technique": "Provide a visible focus using CSS \u003ccode\u003eoutline\u003c/code\u003e property or by altering the foreground and background colors"
+					}
+				],
+				"id": 89,
+				"name": "div",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.CarouselCheck",
+				"weightage": 0.0,
+				"applicable": false
+			}
+		]
+	},
+	{
+		"subGroupId": 56,
+		"groupId": 24,
+		"levelId": 4,
+		"name": "2.4.8 Location",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-location.html",
+		"checkpoints": []
+	},
+	{
+		"subGroupId": 57,
+		"groupId": 24,
+		"levelId": 4,
+		"name": "2.4.9 Link Purpose (Link Only)",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-link.html",
+		"checkpoints": []
+	},
+	{
+		"subGroupId": 58,
+		"groupId": 24,
+		"levelId": 4,
+		"name": "2.4.10 Section Headings",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-headings.html",
+		"checkpoints": []
+	},
+	{
+		"subGroupId": 78,
+		"groupId": 29,
+		"levelId": 2,
+		"name": "2.5.3 Label in Name",
+		"url": "https://www.w3.org/WAI/WCAG21/Understanding/label-in-name",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 347,
+						"severityLevel": 1,
+						"error_message": "The Onscreen/Visible label does not match or start with the accessible lable",
+						"repair_technique": "Make sure that the text of accessible label (provided using aria- label, label tag, title attribute) is same or starts with that of the Onscreen/Visible lable."
+					}
+				],
+				"id": 120,
+				"name": "a|button|textarea",
+				"desc": "com.tcs.eaccess.checks.label.LabelInName",
+				"weightage": 0.0,
+				"applicable": true
+			}
+	]
+	},
+	{
+		"subGroupId": 59,
+		"groupId": 25,
+		"levelId": 2,
+		"name": "3.1.1 Language of Page",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 89,
+						"severityLevel": 0,
+						"error_message": "Document language not defined",
+						"repair_technique": "Add \u003ccode\u003elang\u003c/code\u003e attribute to the \u003ccode\u003ehtml\u003c/code\u003e element"
+					},
+					{
+						"check_id": 90,
+						"severityLevel": 0,
+						"error_message": "Document language is blank",
+						"repair_technique": "Add a language code to the \u003ccode\u003elang\u003c/code\u003e attribute of the \u003ccode\u003ehtml\u003c/code\u003e element"
+					},
+					{
+						"check_id": 92,
+						"severityLevel": 3,
+						"error_message": "Document language may not be correct",
+						"repair_technique": "Check that the language code provided in the \u003ccode\u003elang\u003c/code\u003e attribute of the \u003ccode\u003ehtml\u003c/code\u003eelement correctly represents the actual language of the page "
+					},
+					{
+						"check_id": 91,
+						"severityLevel": 1,
+						"error_message": "Document language may not be valid",
+						"repair_technique": "Add a valid 2 or 3 letter language code to the \u003ccode\u003elang\u003c/code\u003e attribute of the \u003ccode\u003ehtml\u003c/code\u003e element"
+					}
+				],
+				"id": 17,
+				"name": "html",
+				"desc": "com.tcs.eaccess.checks.pageinfo.LanguageCheck",
+				"weightage": 0.0,
+				"applicable": true
+			}
+		]
+	},
+	{
+		"subGroupId": 60,
+		"groupId": 25,
+		"levelId": 3,
+		"name": "3.1.2 Language of Parts",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-other-lang-id.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 93,
+						"severityLevel": 1,
+						"error_message": "Valid lang attribute is missing for the phrase or passage of text",
+						"repair_technique": "Lang attribute with appropriate value should be specified for the phrase or passage of text which is different than that of the default human language of the Web page"
+					}
+				],
+				"id": 18,
+				"name": "html",
+				"desc": "com.tcs.eaccess.checks.pageinfo.LanguageCheckForValidValue",
+				"weightage": 0.0,
+				"applicable": true
+			}
+		]
+	},
+	{
+		"subGroupId": 61,
+		"groupId": 25,
+		"levelId": 4,
+		"name": "3.1.3 Unusual Words",
+		 "url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-idioms.html",
+		"checkpoints": []
+	},
+	{
+		"subGroupId": 62,
+		"groupId": 25,
+		"levelId": 4,
+		"name": "3.1.4 Abbreviations",
+		 "url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-located.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 127,
+						"severityLevel": 1,
+						"error_message": "Missing title of abbreviation",
+						"repair_technique": "Expanded form or meaning of the abbreviated term should be provided using title or any alternate means"
+					},
+					{
+						"check_id": 128,
+						"severityLevel": 1,
+						"error_message": "Blank title of abbreviation",
+						"repair_technique": "The title text should be an expanded form or meaning of the abbreviated term"
+					}
+				],
+				"id": 29,
+				"name": "abbr|acronym",
+				"desc": "com.tcs.eaccess.checks.others.AbbreviationCheck",
+				"weightage": 0.0,
+				"applicable": true
+			}
+		]
+	},
+	{
+		"subGroupId": 63,
+		"groupId": 25,
+		"levelId": 4,
+		"name": "3.1.5 Reading Level",
+		 "url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-supplements.html",
+		"checkpoints": []
+	},
+	{
+		"subGroupId": 64,
+		"groupId": 25,
+		"levelId": 4,
+		"name": "3.1.6 Pronunciation",
+		 "url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-pronunciation.html",
+		"checkpoints": []
+	},
+	{
+		"subGroupId": 65,
+		"groupId": 26,
+		"levelId": 2,
+		"name": "3.2.1 On Focus",
+		 "url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-receive-focus.html",
+		"checkpoints": []
+	},
+	{
+		"subGroupId": 66,
+		"groupId": 26,
+		"levelId": 2,
+		"name": "3.2.2 On Input",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-unpredictable-change.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 138,
+						"severityLevel": 2,
+						"error_message": "Form is missing a submit button",
+						"repair_technique": "Make sure that the form is not being submitted on change of any input value.\u003cbr/\u003eAdd an \u003ccode\u003einput\u003c/code\u003e of type submit towards the end of the form using which the form will be submitted."
+					},
+					{
+						"check_id": 223,
+						"severityLevel": 2,
+						"error_message": "Form action not defined",
+						"repair_technique": "Make sure that the data is not being submitted on change of any input value. Define an \u003ccode\u003eaction\u003c/code\u003e for the form, to which the data will be submitted using a submit button. "
+					},
+					{
+						"check_id": 252,
+						"severityLevel": 1,
+						"error_message": "Form is missing a submit button",
+						"repair_technique": "Make sure that the form is not being submitted on change of any input value.\u003cbr/\u003eAdd an \u003ccode\u003einput\u003c/code\u003e of type submit towards the end of the form using which the form will be submitted."
+					}
+				],
+				"id": 6,
+				"name": "form",
+				"desc": "com.tcs.eaccess.checks.keyboard.FormSubmitCheck",
+				"weightage": 0.0,
+				"applicable": true
+			},
+			{
+				"checks": [
+					{
+						"check_id": 142,
+						"severityLevel": 2,
+						"error_message": "Link opens in a new window",
+						"repair_technique": "Make sure that the link text contains information about the page opening in a new window."
+					}
+				],
+				"id": 30,
+				"name": "a|area",
+				"desc": "com.tcs.eaccess.checks.keyboard.NewWindowLinkCheck",
+				"weightage": 0.0,
+				"applicable": true
+			},
+			{
+				"checks": [
+					{
+						"check_id": 224,
+						"severityLevel": 2,
+						"error_message": "Input may cause a change of context",
+						"repair_technique": "Make sure that upon changing the input value, a change of context does not occur."
+					}
+				],
+				"id": 91,
+				"name": "input|textarea|select",
+				"desc": "com.tcs.eaccess.checks.keyboard.OnChangeCheck",
+				"weightage": 0.0,
+				"applicable": true
+			}
+		]
+	},
+	{
+		"subGroupId": 67,
+		"groupId": 26,
+		"levelId": 3,
+		"name": "3.2.3 Consistent Navigation",
+		 "url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-locations.html",
+		"checkpoints": []
+	},
+	{
+		"subGroupId": 68,
+		"groupId": 26,
+		"levelId": 3,
+		"name": "3.2.4 Consistent Identification",
+		  "url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-functionality.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 136,
+						"severityLevel": 2,
+						"error_message": "Repeated links not consistent",
+						"repair_technique": "Check that repeated links have consistent link text across web pages"
+					},
+					{
+						"check_id": 135,
+						"severityLevel": 2,
+						"error_message": "Repeated images not consistent",
+						"repair_technique": "Repeated images should have the same \u003ccode\u003ealt\u003c/code\u003e text"
+					}
+				],
+				"id": 39,
+				"name": "img|a",
+				"desc": "com.tcs.eaccess.checks.consistency.ConsistentIdentificationCheck",
+				"weightage": 0.0,
+				"applicable": true
+			}
+		]
+	},
+	{
+		"subGroupId": 69,
+		"groupId": 26,
+		"levelId": 4,
+		"name": "3.2.5 Change on Request",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-no-extreme-changes-context.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 140,
+						"severityLevel": 0,
+						"error_message": "Page refresh is used with a timeout",
+						"repair_technique": "Set the redirection timeout to 0 or use a server side redirect"
+					}
+				],
+				"id": 19,
+				"name": "head",
+				"desc": "com.tcs.eaccess.checks.pageinfo.RefreshCheck",
+				"weightage": 0.0,
+				"applicable": true
+			}
+		]
+	},
+	{
+		"subGroupId": 70,
+		"groupId": 27,
+		"levelId": 2,
+		"name": "3.3.1 Error Identification",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-identified.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 349,
+						"severityLevel": 1,
+						"error_message": "Programmatic indication is not provided to identify mandatory/required fields",
+						"repair_technique": "Use HTML 'required' attribute or aria-required='true' or aria-invalid='true' to identify mandatory/required fields"
+					},
+					{
+						"check_id": 352,
+						"severityLevel": 1,
+						"error_message": "Programmatic indication provided but value field is blank",
+						"repair_technique": "Mandatory field should have some value ."
+					}
+				],
+				"id": 124,
+				"name": "input|select",
+				"desc": "com.tcs.eaccess.checks.error.Erroridentification",
+				"weightage": 0.0,
+				"applicable": true
+			}
+	]
+	},
+	{
+		"subGroupId": 71,
+		"groupId": 27,
+		"levelId": 2,
+		"name": "3.3.2 Labels or Instructions",
+		 "url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 286,
+						"severityLevel": 1,
+						"error_message": "Description of \u003ccode\u003ealertdialog\u003c/code\u003e is missing",
+						"repair_technique": "Use \u003ccode\u003earia-describedby\u003c/code\u003e on an alertdialog to reference the alert message element in the dialog"
+					},
+					{
+						"check_id": 291,
+						"severityLevel": 1,
+						"error_message": "Definition is missing a term",
+						"repair_technique": "Identify the element being defined by giving that element a role of \u003ccode\u003eterm\u003c/code\u003e and referencing it with the \u003ccode\u003earia-labelledby\u003c/code\u003e attribute. "
+					},
+					{
+						"check_id": 292,
+						"severityLevel": 1,
+						"error_message": "Missing dialog label",
+						"repair_technique": "Provide a dialog label, which can be done with the \u003ccode\u003earia-label\u003c/code\u003e or \u003ccode\u003earia-labelledby\u003c/code\u003e attribute"
+					},
+					{
+						"check_id": 297,
+						"severityLevel": 1,
+						"error_message": "Elements not marked with rowgroup role",
+						"repair_technique": "Provide \u003ccode\u003erole\u003d\u0026quot;rowgroup\u0026quot;\u003c/code\u003e on the following elements"
+					},
+					{
+						"check_id": 300,
+						"severityLevel": 1,
+						"error_message": "Elements not marked with group role",
+						"repair_technique": "Provide \u003ccode\u003erole\u003d\u0026quot;group\u0026quot;\u003c/code\u003e on the following elements"
+					},
+					{
+						"check_id": 306,
+						"severityLevel": 1,
+						"error_message": "Label for region not defined",
+						"repair_technique": "Reference a visible label with \u003ccode\u003earia-labelledby\u003c/code\u003e"
+					}
+				],
+				"id": 106,
+				"name": "all",
+				"desc": "com.tcs.eaccess.checks.markup.AriaCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 259,
+						"severityLevel": 1,
+						"error_message": "Fieldset should not be used for visual presentation purpose only",
+						"repair_technique": "Make sure that the \u003ccode\u003efieldset\u003c/code\u003e contains input fields that are grouped together and is not used for visual purpose only"
+					},
+					{
+						"check_id": 241,
+						"severityLevel": 1,
+						"error_message": "Fieldset is missing legend",
+						"repair_technique": "Add a \u003ccode\u003elegend\u003c/code\u003e to the fieldset"
+					},
+					{
+						"check_id": 243,
+						"severityLevel": 1,
+						"error_message": "Fieldset contains blank legend",
+						"repair_technique": "Add meaningful text to the \u003ccode\u003elegend\u003c/code\u003e in the fieldset"
+					}
+				],
+				"id": 99,
+				"name": "fieldset",
+				"desc": "com.tcs.eaccess.checks.forms.FieldsetLegendCheck",
+				"weightage": 0.0,
+				"applicable": true
+			}
+		]
+	},
+	{
+		"subGroupId": 72,
+		"groupId": 27,
+		"levelId": 3,
+		"name": "3.3.3 Error Suggestion",
+		 "url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-suggestions.html",
+		"checkpoints": []
+	},
+	{
+		"subGroupId": 73,
+		"groupId": 27,
+		"levelId": 3,
+		"name": "3.3.4 Error Prevention (Legal, Financial, Data)",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible.html",
+		"checkpoints": []
+	},
+	{
+		"subGroupId": 74,
+		"groupId": 27,
+		"levelId": 4,
+		"name": "3.3.5 Help",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-context-help.html",
+		"checkpoints": []
+	},
+	{
+		"subGroupId": 75,
+		"groupId": 27,
+		"levelId": 4,
+		"name": "3.3.6 Error Prevention (All)",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible-all.html",
+		"checkpoints": []
+	},
+	{
+		"subGroupId": 76,
+		"groupId": 28,
+		"levelId": 2,
+		"name": "4.1.1 Parsing",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-parses.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 141,
+						"severityLevel": 0,
+						"error_message": "Duplicate access key",
+						"repair_technique": "\u003ccode\u003eaccesskey\u003c/code\u003e attribute for each element should be unique"
+					}
+				],
+				"id": 23,
+				"name": "a|area|button|input|label|legend|textarea",
+				"desc": "com.tcs.eaccess.checks.markup.AccessKeyCheck",
+				"weightage": 0.0,
+				"applicable": true
+			},
+			{
+				"checks": [
+					{
+						"check_id": 108,
+						"severityLevel": 1,
+						"error_message": "Blank name attribute",
+						"repair_technique": "Provide a value to the \u003ccode\u003ename\u003c/code\u003e attribute of the element"
+					},
+					{
+						"check_id": 109,
+						"severityLevel": 1,
+						"error_message": "Invalid name attribute",
+						"repair_technique": "\u003ccode\u003ename\u003c/code\u003e attribute must begin with a letter ( A-Z or a-z ) or underscore ( _ ) and may be followed by any number of letters, digits ( 0-9 ), hyphens (\"-\"), underscores (\"_\"), colons (\":\"), and periods (\".\")"
+					}
+				],
+				"id": 24,
+				"name": "input|textarea|select",
+				"desc": "com.tcs.eaccess.checks.markup.NameCheck",
+				"weightage": 0.0,
+				"applicable": true
+			},
+			{
+				"checks": [
+					{
+						"check_id": 105,
+						"severityLevel": 1,
+						"error_message": "Blank id attribute",
+						"repair_technique": "Provide a value to the \u003ccode\u003eid\u003c/code\u003e attribute of the element"
+					},
+					{
+						"check_id": 107,
+						"severityLevel": 0,
+						"error_message": "Duplicate id attribute",
+						"repair_technique": "Provide a unique value to the \u003ccode\u003eid\u003c/code\u003e attribute of the element; that has not been used by another element on the page"
+					},
+					{
+						"check_id": 106,
+						"severityLevel": 1,
+						"error_message": "Invalid id attribute",
+						"repair_technique": "\u003ccode\u003eid\u003c/code\u003e attribute should not contain any space characters"
+					}
+				],
+				"id": 22,
+				"name": "all",
+				"desc": "com.tcs.eaccess.checks.markup.UniqueIdCheck",
+				"weightage": 0.0,
+				"applicable": true
+			},
+			{
+				"checks": [
+					{
+						"check_id": 287,
+						"severityLevel": 1,
+						"error_message": "More than one \u003ccode\u003ebanner\u003c/code\u003e exist in the document or application",
+						"repair_technique": "Mark only one of the element with the banner role in the document or application"
+					},
+					{
+						"check_id": 288,
+						"severityLevel": 1,
+						"error_message": "More than one \u003ccode\u003econtentinfo\u003c/code\u003e exist in the document or application",
+						"repair_technique": "Mark only one of the element with the contentinfo role in the document or application"
+					},
+					{
+						"check_id": 289,
+						"severityLevel": 1,
+						"error_message": "More than one \u003ccode\u003emain\u003c/code\u003e region exist in the document or application",
+						"repair_technique": "Mark only one of the element with the main role in the document or application"
+					},
+					{
+						"check_id": 290,
+						"severityLevel": 1,
+						"error_message": "\u003ccode\u003earia-required\u003c/code\u003e or \u003ccode\u003earia-readonly\u003c/code\u003e used in  columnheader",
+						"repair_technique": "Do not use \u003ccode\u003earia-required\u003c/code\u003e or \u003ccode\u003earia-readonly\u003c/code\u003e in a columnheader that descends from a table"
+					},
+					{
+						"check_id": 293,
+						"severityLevel": 1,
+						"error_message": "Dialog label is blank",
+						"repair_technique": "Provide a value to the \u003ccode\u003earia-label\u003c/code\u003e attribute"
+					},
+					{
+						"check_id": 298,
+						"severityLevel": 1,
+						"error_message": "Unnecessary usage of aria heading",
+						"repair_technique": "Use native HTML heading for levels 1 to 6"
+					},
+					{
+						"check_id": 303,
+						"severityLevel": 1,
+						"error_message": "Minimum value of progressbar not defined",
+						"repair_technique": "Use \u003ccode\u003earia-valuemin\u003c/code\u003e to define the minimum value"
+					},
+					{
+						"check_id": 304,
+						"severityLevel": 1,
+						"error_message": "Maximum value of progressbar not defined",
+						"repair_technique": "Use \u003ccode\u003earia-valuemax\u003c/code\u003e to define the maximum value"
+					},
+					{
+						"check_id": 305,
+						"severityLevel": 2,
+						"error_message": "Current value of progressbar not defined",
+						"repair_technique": "Unless the value is indeterminate, use \u003ccode\u003earia-valuenow\u003c/code\u003e to define the current value"
+					},
+					{
+						"check_id": 307,
+						"severityLevel": 1,
+						"error_message": "Label element for region is missing",
+						"repair_technique": "Make sure that the visible label referenced with \u003ccode\u003earia-labelledby\u003c/code\u003e exists on the page"
+					},
+					{
+						"check_id": 308,
+						"severityLevel": 2,
+						"error_message": "Label element for region is not a heading",
+						"repair_technique": "Include the label inside of a heading whenever possible"
+					},
+					{
+						"check_id": 313,
+						"severityLevel": 2,
+						"error_message": "Tooltip not referenced",
+						"repair_technique": "Elements with the role tooltip should be referenced through the use of \u003ccode\u003earia-describedby\u003c/code\u003e before or at the time the tooltip is displayed. "
+					},
+					{
+						"check_id": 315,
+						"severityLevel": 1,
+						"error_message": "More than one element marked with \u003ccode\u003earia-current\u003c/code\u003e",
+						"repair_technique": "Only mark one element in a set of elements as current with aria-current. "
+					},
+					{
+						"check_id": 316,
+						"severityLevel": 1,
+						"error_message": "Content is hidden",
+						"repair_technique": "Ensure the content is not hidden and is included in a container that exposes the content to the user"
+					},
+					{
+						"check_id": 317,
+						"severityLevel": 1,
+						"error_message": "Missing \u003ccode\u003earia-invalid\u003c/code\u003e",
+						"repair_technique": "Use aria-invalid in conjunction with aria-errormessage "
+					},
+					{
+						"check_id": 318,
+						"severityLevel": 1,
+						"error_message": "Element is missing label reference",
+						"repair_technique": "Provide a valid reference in \u003ccode\u003earia-labelledby\u003c/code\u003e attribute or remove it if not required"
+					},
+					{
+						"check_id": 319,
+						"severityLevel": 1,
+						"error_message": "Element used as label reference does not exist",
+						"repair_technique": "Provide a valid reference in \u003ccode\u003earia-labelledby\u003c/code\u003e attribute or remove it if not required"
+					},
+					{
+						"check_id": 320,
+						"severityLevel": 1,
+						"error_message": "\u003ccode\u003earia-selected\u003c/code\u003e not specified",
+						"repair_technique": "Ensure that selected descendants have the aria-selected attribute set to true, and selectable descendant have the aria-selected attribute set to false. "
+					},
+					{
+						"check_id": 321,
+						"severityLevel": 1,
+						"error_message": "\u003ccode\u003earia-owns\u003c/code\u003e used for DOM descendant",
+						"repair_technique": "Do not use aria-owns as a replacement for the DOM hierarchy. If the relationship is represented in the DOM, do not use aria-owns."
+					},
+					{
+						"check_id": 322,
+						"severityLevel": 1,
+						"error_message": "Max value is less than Min value",
+						"repair_technique": "Ensure the value of aria-valuemax is greater than or equal to the value of aria-valuemin. "
+					},
+					{
+						"check_id": 323,
+						"severityLevel": 1,
+						"error_message": "Min value is greater than Max value",
+						"repair_technique": "Ensure the value of aria-valuemin is less than or equal to the value of aria-valuemax. "
+					},
+					{
+						"check_id": 324,
+						"severityLevel": 1,
+						"error_message": "\u003ccode\u003earia-valuenow\u003c/code\u003e is not a decimal number",
+						"repair_technique": "The value of aria-valuenow should be a decimal number."
+					},
+					{
+						"check_id": 325,
+						"severityLevel": 1,
+						"error_message": "ARIA roles are not supported by element",
+						"repair_technique": "Remove the ARIA role applied on element"
+					},
+					{
+						"check_id": 326,
+						"severityLevel": 1,
+						"error_message": "Role applied is implicit to the element",
+						"repair_technique": "Remove the ARIA role applied on element"
+					},
+					{
+						"check_id": 327,
+						"severityLevel": 1,
+						"error_message": "Applied role is not allowed on element",
+						"repair_technique": "Remove the applied roles and apply the appropriate roles on the element"
+					},
+					{
+						"check_id": 329,
+						"severityLevel": 1,
+						"error_message": "ARIA attributes are not supported by element",
+						"repair_technique": "Remove the ARIA attributes applied on element"
+					},
+					{
+						"check_id": 330,
+						"severityLevel": 1,
+						"error_message": "Applied attribute is not allowed on element",
+						"repair_technique": "Use the attributes that are allowed on element"
+					},
+					{
+						"check_id": 331,
+						"severityLevel": 1,
+						"error_message": "Required ARIA attributes are missing on element",
+						"repair_technique": "Apply the following missing attributes"
+					}
+				],
+				"id": 104,
+				"name": "all",
+				"desc": "com.tcs.eaccess.checks.markup.AriaCheck",
+				"weightage": 0.0,
+				"applicable": true
+			}
+		]
+	},
+	{
+		"subGroupId": 77,
+		"groupId": 28,
+		"levelId": 2,
+		"name": "4.1.2 Name, Role, Value",
+		"url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html",
+		"checkpoints": [
+			{
+				"checks": [
+					{
+						"check_id": 75,
+						"severityLevel": 0,
+						"error_message": "Noframes not specified",
+						"repair_technique": "Add a \u003ccode\u003enoframes\u003c/code\u003e section to the \u003ccode\u003eframeset\u003c/code\u003e"
+					},
+					{
+						"check_id": 76,
+						"severityLevel": 0,
+						"error_message": "Missing title attribute",
+						"repair_technique": "Add a \u003ccode\u003etitle\u003c/code\u003e attribute to the frame"
+					},
+					{
+						"check_id": 77,
+						"severityLevel": 0,
+						"error_message": "Blank title",
+						"repair_technique": "Provide a valid text to the \u003ccode\u003etitle\u003c/code\u003e attribute"
+					},
+					{
+						"check_id": 78,
+						"severityLevel": 1,
+						"error_message": "Title attribute has placeholder text",
+						"repair_technique": "Provide a valid text to the \u003ccode\u003etitle\u003c/code\u003e attribute that describes the purpose of the frame"
+					},
+					{
+						"check_id": 81,
+						"severityLevel": 2,
+						"error_message": "Frame title text is short",
+						"repair_technique": "Check that the frame \u003ccode\u003etitle\u003c/code\u003e is valid"
+					},
+					{
+						"check_id": 82,
+						"severityLevel": 2,
+						"error_message": "Frame title text is verbose",
+						"repair_technique": "Check that the frame \u003ccode\u003etitle\u003c/code\u003e is valid"
+					},
+					{
+						"check_id": 80,
+						"severityLevel": 1,
+						"error_message": "iframe does not have alternate content",
+						"repair_technique": "Provide alternate content in \u003ccode\u003eiframe\u003c/code\u003e body"
+					},
+					{
+						"check_id": 270,
+						"severityLevel": 1,
+						"error_message": "Duplicate frame title",
+						"repair_technique": "Provide a unique \u003ccode\u003etitle\u003c/code\u003e to the frame that describes its purpose"
+					},
+					{
+						"check_id": 269,
+						"severityLevel": 1,
+						"error_message": "Frame title is same as it page name",
+						"repair_technique": "Provide a valid text to the \u003ccode\u003etitle\u003c/code\u003e attribute that describes the purpose of the frame"
+					},
+					{
+						"check_id": 271,
+						"severityLevel": 0,
+						"error_message": "Blank noframes",
+						"repair_technique": "Add meaningful text to the \u003ccode\u003enoframes\u003c/code\u003e section\n"
+					},
+					{
+						"check_id": 272,
+						"severityLevel": 2,
+						"error_message": "iframe may require a title",
+						"repair_technique": "Check if a \u003ccode\u003etitle\u003c/code\u003e attribute is required for the \u003ccode\u003eiframe\u003c/code\u003e"
+					}
+				],
+				"id": 15,
+				"name": "frame|iframe|frameset",
+				"desc": "com.tcs.eaccess.checks.frames.FrameAccessibilityCheck",
+				"weightage": 0.0,
+				"applicable": true
+			},
+			{
+				"checks": [
+					{
+						"check_id": 148,
+						"severityLevel": 0,
+						"error_message": "Thumb icon not marked with slider role",
+						"repair_technique": "Provide \u003ccode\u003erole\u003d”slider”\u003c/code\u003e for the slider thumb"
+					},
+					{
+						"check_id": 149,
+						"severityLevel": 0,
+						"error_message": "Minimum value of slider not defined",
+						"repair_technique": "Define the minimum value using \u003ccode\u003earia-valuemin\u003c/code\u003e attribute"
+					},
+					{
+						"check_id": 150,
+						"severityLevel": 0,
+						"error_message": "Maximum value of slider not defined",
+						"repair_technique": "Define the maximum value using \u003ccode\u003earia-valuemax\u003c/code\u003e attribute"
+					},
+					{
+						"check_id": 151,
+						"severityLevel": 0,
+						"error_message": "Current value of slider not available",
+						"repair_technique": "Define the current value using \u003ccode\u003earia-valuenow\u003c/code\u003e or \u003ccode\u003earia-valuetext\u003c/code\u003e attribute"
+					}
+				],
+				"id": 42,
+				"name": "div|span|a",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.SliderCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 156,
+						"severityLevel": 0,
+						"error_message": "Menubar not marked with menubar role",
+						"repair_technique": "Provide \u003ccode\u003erole\u003d”menu”\u003c/code\u003e or \u003ccode\u003erole\u003d”menubar”\u003c/code\u003e for the main menu"
+					},
+					{
+						"check_id": 157,
+						"severityLevel": 0,
+						"error_message": "Items in menu not marked with menuitem role",
+						"repair_technique": "Provide \u003ccode\u003erole\u003d”menuitem”\u003c/code\u003e for the items in menu"
+					},
+					{
+						"check_id": 158,
+						"severityLevel": 0,
+						"error_message": "Menu items containing submenus not have aria-haspopup defined",
+						"repair_technique": "Define the popup state by setting \u003ccode\u003earia-haspopup\u003d”true”\u003c/code\u003e"
+					}
+				],
+				"id": 47,
+				"name": "ul|ol",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.MenubarCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 167,
+						"severityLevel": 0,
+						"error_message": "Tree not marked with tree role",
+						"repair_technique": "Provide \u003ccode\u003erole\u003d”tree”\u003c/code\u003e for the tree"
+					},
+					{
+						"check_id": 168,
+						"severityLevel": 0,
+						"error_message": "Items in tree not marked with treeitem role",
+						"repair_technique": "Provide \u003ccode\u003erole\u003d”treeitem”\u003c/code\u003e for the items in tree"
+					},
+					{
+						"check_id": 169,
+						"severityLevel": 1,
+						"error_message": "One or more elements do not have an accessible name",
+						"repair_technique": "Please provide an accessible name using aria-label, aria-labelledby, or native markup"
+					},
+					{
+						"check_id": 170,
+						"severityLevel": 0,
+						"error_message": "One or more expandable/collapsible sub-trees not marked with group role ",
+						"repair_technique": "All sub-trees should be marked with \u003ccode\u003erole\u003d”group”\u003c/code\u003e"
+					},
+					{
+						"check_id": 171,
+						"severityLevel": 1,
+						"error_message": "Expanded/Collapsed state of one or more treeitems not defined",
+						"repair_technique": "Mark the tree-items containing sub-trees with \u003ccode\u003earia-expanded\u003c/code\u003e with value set to true or false as per the expanded state of the sub-tree "
+					}
+				],
+				"id": 56,
+				"name": "ul|ol",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.TreeviewCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 183,
+						"severityLevel": 1,
+						"error_message": "One or more elements do not have an accessible name",
+						"repair_technique": "Please provide an accessible name using aria-label, aria-labelledby, or native markup"
+					},
+					{
+						"check_id": 185,
+						"severityLevel": 0,
+						"error_message": "Datepicker grid not marked with grid role",
+						"repair_technique": "Mark the datepicker grid with \u003ccode\u003erole\u003d”grid”\u003c/code\u003e"
+					},
+					{
+						"check_id": 186,
+						"severityLevel": 0,
+						"error_message": "One or more datepicker grid rows not marked with row role",
+						"repair_technique": "Mark the datepicker grid rows with \u003ccode\u003erole\u003d”row”\u003c/code\u003e"
+					},
+					{
+						"check_id": 187,
+						"severityLevel": 0,
+						"error_message": "One or more datepicker grid cells not marked with gridcell role",
+						"repair_technique": "Mark the datepicker grid cells with \u003ccode\u003erole\u003d”gridcell”\u003c/code\u003e"
+					},
+					{
+						"check_id": 184,
+						"severityLevel": 1,
+						"error_message": "Role of one or more control not available programmatically in the datepicker",
+						"repair_technique": "Provide appropriate role to each control that is not a part of standard HTML markup"
+					},
+					{
+						"check_id": 188,
+						"severityLevel": 0,
+						"error_message": "Selected state for one or more gridcells not defined in the datepicker",
+						"repair_technique": "Gridcell elements that can be selected should be marked with aria-selected, the value of which depends on its selected state"
+					}
+				],
+				"id": 66,
+				"name": "input",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.DatepickerCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 213,
+						"severityLevel": 3,
+						"error_message": "Pause/stop/hide control does not have an accessible name",
+						"repair_technique": "Please provide an accessible name using aria-label, aria-labelledby, or native markup"
+					},
+					{
+						"check_id": 214,
+						"severityLevel": 3,
+						"error_message": "Role for pause/stop/hide control is not available",
+						"repair_technique": "Provide appropriate role to each control that is not a part of standard HTML markup"
+					}
+				],
+				"id": 83,
+				"name": "div",
+				"desc": "com.tcs.eaccess.checks.dynamicelements.CarouselCheck",
+				"weightage": 0.0,
+				"applicable": false
+			},
+			{
+				"checks": [
+					{
+						"check_id": 276,
+						"severityLevel": 2,
+						"error_message": "Appropriate role not defined",
+						"repair_technique": "Provide a \u003ccode\u003erole\u003c/code\u003e to the element accroding to the action it performs"
+					}
+				],
+				"id": 102,
+				"name": "div|span|p|li|dd|dt|td|th|button|img",
+				"desc": "com.tcs.eaccess.checks.keyboard.EventHandlerCheck",
+				"weightage": 0.0,
+				"applicable": false
+			}
+		]
+	}
+]
